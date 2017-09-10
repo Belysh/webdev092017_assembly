@@ -1,5 +1,6 @@
 .welcome {
     min-height: 100vh;
+    position: relative;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -34,10 +35,10 @@
 
 // центральный блок
 .welcome__center {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 .main {
@@ -46,9 +47,8 @@
     justify-content: space-between;
     align-items: center;
     width: 380px;
-    background-color: rgb(252, 252, 252);
-    opacity: 0.851;
-    border-radius: 5px;
+    background-color: rgba(252, 252, 252, 0.8);
+    border-radius: 5px 5px 0 0;
 }
 
 .avatar__box {
@@ -70,11 +70,12 @@
     font-family: RobotoRegular;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 37px;
+
 }
 
 .main__socials {
-    margin-bottom: 40px;
+margin-bottom: 40px;
+margin-top: 38px;
 }
 
 .icons {
@@ -86,42 +87,52 @@
 }
 
 .icons__link {
-    font-size: 30px;
+    font-size: 22px;
     color: #70d1c6;
 }
 
 .nav {
     width: 380px;
+    background-color: rgba(0, 191, 165, 0.851);
+    border-radius: 0 0 5px 5px;
 }
 
 .nav__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.nav__item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0, 150, 136, 0.5);
+    }
 }
 
 .nav__link {
     color: #fff;
     display: block;
-    background-color: rgb(0, 191, 165);
-    padding: 15px 20px;
+    padding: 15px 0;
+}
+
+.nav__item + .nav__item {
+    border-left: 2px solid #73c8c0;
 }
 
 
-  
-
-
-  
 
 // нижний блок
 .welcome__bottom {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+    text-align: center;
 }
 
-
-
 .bottom-text {
-    color: #fff;
+    color: #ffffff;
+    font-family: RobotoLight;
 }
 

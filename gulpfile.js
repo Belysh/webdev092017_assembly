@@ -26,6 +26,7 @@ const gulpIf = require('gulp-if');
 const del = require('del');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
+const wait = require('gulp-wait');
 
 //for errors
 const plumber = require('gulp-plumber');

@@ -1,4 +1,3 @@
-include components/_mixin.pug
 block variables
 
 doctype html
@@ -13,4 +12,10 @@ html
     link(rel='stylesheet' href='assets/styles/main.min.css')
 
   body
-    block content
+    section.welcome
+      .welcome__top
+        block login
+      .welcome__center
+        block main
+      .welcome__bottom
+        .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016

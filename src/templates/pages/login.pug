@@ -1,0 +1,35 @@
+extends ../template
+
+block variables
+  - var title = 'Login'
+
+block main
+    .enter
+        .enter__title
+            h1.enter__text Авторизуйтесь
+        form.form(action="#")
+            .login
+                label(for="name").login__icon.fa.fa-user
+                input(type="text" name="name" id="name").login__field
+            .password
+                label(for="password").password__icon.fa.fa-key
+                input(type="password" id="password" name="password").password__field
+            .checkbox
+                label(for="check").checkbox__label
+                span.checkbox__custom
+                input(type="checkbox" id="check" name="check" value='yes').checkbox__item
+                span.checkbox__text Я человек
+            .radio
+                .radio__title Вы точно не робот?
+                .radio__var
+                    span Да
+                        input(name="sure" type="radio" value="yes")
+                    span Не уверен
+                        input(name="sure" type="radio" value="no")
+
+    nav.nav
+        ul.nav__list
+            li.nav__item
+                a(href="index.html").nav__link На главную
+            li.nav__item
+                a(href="").nav__link Войти
