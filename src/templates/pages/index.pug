@@ -1,8 +1,40 @@
 extends ../template
 
 block variables
-  - var title = 'Первая страница'
+  - var title = 'Welcome'
 
-block content
-  h1 Первая страница
-  +menu("nav", ["Первая страница", "Вторая страница"],  ['./index.html', "./about.html"])
+block content 
+  section.welcome
+    .welcome__top
+      .login
+        a.login__link(href="#") Авторизоваться
+    .welcome__center
+      .main
+        .avatar
+          .avatar__box
+            img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+        .main__title
+          h1.main__name Владимир Астахов
+          .main__info Личный сайт веб разработчика
+        .main__socials
+          ul.icons
+            li.icons__item
+              a(href="#" class='icons__link')
+                i.fa.fa-vk(aria-hidden='true')
+            li.icons__item
+              a(href="#" class='icons__link')
+                i.fa.fa-github-alt(aria-hidden='true')
+            li.icons__item
+              a(href="#" class='icons__link')
+                i.fa.fa-linkedin(aria-hidden='true')
+      nav.nav
+        ul.nav__list
+          li.nav__item
+            a(href="#").nav__link Мои работы
+          li.nav__item
+            a(href="#").nav__link Обо мне
+          li.nav__item
+            a(href="#").nav__link Блог
+    .welcome__bottom
+      .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+

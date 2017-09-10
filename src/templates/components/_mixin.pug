@@ -3,4 +3,6 @@ mixin menu(className, items, hrefs)
         ul(class=`${className}__list`)
              -for (var i=0; i<hrefs.length; i++)
                 li(class=`${className}__item`)
+                    i.fa.fa-bath.my__icon Some
                     a(class=`${className}__link` href=`${hrefs[i]}`)= items[i]
+

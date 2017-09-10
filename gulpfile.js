@@ -15,6 +15,12 @@ const mincss = require("gulp-csso");
 const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
 
+//for svg
+const svgSprite = require('gulp-svg-sprite');
+const svgmin = require('gulp-svgmin');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
+
 //for change
 const gulpIf = require('gulp-if');
 const del = require('del');
@@ -47,8 +53,12 @@ const paths = {
         dest: 'dist/assets/styles/'
     },
     images: {
-        src: 'src/images/**/*.*',
+        src: 'src/images/**/*.{png, svg, jpg}',
         dest: 'dist/assets/images/'
+    },
+    svg: {
+        src: 'src/sprite/**/*.svg',
+        dest: 'src/images/'
     }
 };
 
@@ -78,10 +88,12 @@ function styles() {
     return gulp.src("./src/styles/*main.scss")
     .pipe(plumber({errorHandler: notify.onError(function (err) {return {title: 'Style', message: err.message}})}))
     .pipe(gulpIf(isDevelopment, sourcemaps.init()))
-    .pipe(sass())
+    .pipe(sass({
+        includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(mincss())
+    // .pipe(mincss())
     .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest(paths.styles.dest));  
 }
@@ -98,11 +110,52 @@ function images() {
           .pipe(gulp.dest(paths.images.dest));
 }
 
+// svg-спрайт
+function toSvg() {
+    return gulp
+      .src(paths.svg.src)
+      .pipe(
+        svgmin({
+          js2svg: {
+            pretty: true
+          }
+        })
+      )
+      .pipe(
+        cheerio({
+          run: function($) {
+            $("[fill]").removeAttr("fill");
+            $("[stroke]").removeAttr("stroke");
+            $("[style]").removeAttr("style");
+          },
+          parserOptions: {
+            xmlMode: true
+          }
+        })
+      )
+      .pipe(replace("&gt;", ">"))
+      .pipe(
+        svgSprite({
+          mode: {
+            symbol: {
+              sprite: "../sprite.svg",
+              example: {
+                dest: "../tmp/spriteSvgDemo.html" // демо html
+              }
+            }
+          }
+        })
+      )
+      .pipe(gulp.dest(paths.svg.dest));
+  }
+
+exports.toSvg = toSvg;
+
 // watch
 function watch() {
   gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.images.src, images);   
+  gulp.watch(paths.images.src, images);
 }
 
 
@@ -117,7 +170,7 @@ function server() {
 }
 
 
-gulp.task('default', gulp.series (server, watch));
+// gulp.task('default', gulp.series (server, watch));
 
 
 function clean() {
@@ -125,8 +178,8 @@ function clean() {
 }
 
 // //project assembly (production)
-gulp.task('build', gulp.series(
+gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, fonts),
+    gulp.parallel(templates, styles, images, fonts),
     gulp.parallel(watch, server)
 ));
