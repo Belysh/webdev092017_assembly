@@ -44,12 +44,12 @@
 }
 
 
-.login, .password {
+.login-name, .password {
     overflow: hidden;
     font-size: 0;
     width: 340px;
 }
-.login__field, .password__field {
+.login-name__field, .password__field {
     outline: 0;
     border: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@
     width: 100%;
 }
 
-.login__icon, .password__icon {
+.login-name__icon, .password__icon {
     border-radius: 5px 0 0 5px;
     width: 50px;
     background-color: #f0efe9;
@@ -75,31 +75,111 @@
     position: absolute;
 }
 
-.checkbox__custom {
+.checkbox {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0;
+}
+
+.checkbox__label {
     display: inline-block;
     border-radius: 2px;
     background-color: rgb(0, 191, 165);
-    width: 21px;
+    overflow: hidden;
+    width: 20px;
     height: 20px;
     cursor: pointer;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
 }
 
 .checkbox__item {
     display: none;
+    font-size: 16px;
 }
 
-.checkbox__item:checked .checkbox__label:before {
+.checkbox__icon {
+    display: none;
+    font-size: 16px;
+    color: #fff;
+    font-size: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.checkbox__item:checked + .checkbox__label .checkbox__icon {
+    display: inline-block;
+}
+
+.checkbox__text {
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: RobotoRegular;
+}
+
+.radio__var {
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+.radio__title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: RobotoBold;
+}
+
+.radio__sure, .radio__no {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 16px;
+
+}
+
+.radio__sure {
+    margin-right: 20px;
+}
+
+.radio__no {
+    margin-left: 20px;
+}
+
+.radio__item {
+    display: none;
+}
+
+.radio__label {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.radio__item:checked + .radio__label:before {
     content: "";
     display: inline-block;
-    width: 5px;
-    height: 5px;
     border-radius: 50%;
-    background-color:#fff;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	font-size: 15px;
-	color: #f3f3f3;
-	text-align: center;
+    background-color: rgb(0, 191, 165);
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    transform: translate(0, -2px);
+
+
+      
 }
+
+.radio__text {
+    display: inline-block;
+}
+
     
 
 

@@ -19,23 +19,30 @@
 						<h1 class="enter__text">Авторизуйтесь</h1>
 					</div>
 					<form class="form" action="#">
-						<div class="login">
-							<label class="login__icon fa fa-user" for="name"></label>
-							<input class="login__field" type="text" name="name" id="name">
+						<div class="login-name">
+							<label class="login-name__icon fa fa-user" for="name"></label>
+							<input class="login-name__field" type="text" name="name" id="name">
 						</div>
 						<div class="password">
 							<label class="password__icon fa fa-key" for="password"></label>
 							<input class="password__field" type="password" id="password" name="password">
 						</div>
 						<div class="checkbox">
-							<label class="checkbox__label" for="check"></label><span class="checkbox__custom"></span>
-							<input class="checkbox__item" type="checkbox" id="check" name="check" value="yes"><span class="checkbox__text">Я человек</span>
+							<input class="checkbox__item" type="checkbox" id="check" name="check" value="yes">
+							<label class="checkbox__label" for="check"><i class="fa fa-check checkbox__icon" aria-hidden="true"></i></label><span class="checkbox__text">Я человек</span>
 						</div>
 						<div class="radio">
 							<div class="radio__title">Вы точно не робот?</div>
-							<div class="radio__var"><span>Да
-									<input name="sure" type="radio" value="yes"></span><span>Не уверен
-									<input name="sure" type="radio" value="no"></span></div>
+							<div class="radio__var">
+								<div class="radio__sure">
+									<input class="radio__item" name="sure" type="radio" value="yes" id="sure">
+									<label class="radio__label" for="sure"></label><span class="radio__text">Да</span>
+								</div>
+								<div class="radio__no">
+									<input class="radio__item" name="sure" type="radio" value="no" id="no">
+									<label class="radio__label" for="no"></label><span class="radio__text">Не уверен</span>
+								</div>
+							</div>
 						</div>
 					</form>
 				</div>

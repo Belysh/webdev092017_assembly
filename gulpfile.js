@@ -54,7 +54,7 @@ const paths = {
         dest: 'dist/assets/styles/'
     },
     images: {
-        src: 'src/images/**/*.{png, svg, jpg}',
+        src: 'src/images/**/*.{png,svg,jpg}',
         dest: 'dist/assets/images/'
     },
     svg: {
@@ -73,7 +73,8 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 function templates() {
      return gulp.src("./src/templates/pages/**/*.pug")
     .pipe(pug({ pretty: "\t" }))
-    .pipe(gulp.dest(paths.root));   
+    .pipe(gulp.dest(paths.root))
+    .pipe(browserSync.stream({ once: true }));   
 }
 
 exports.templates = templates;
@@ -130,7 +131,7 @@ function toSvg() {
             $("[style]").removeAttr("style");
           },
           parserOptions: {
-            xmlMode: true
+            xmlMode: false
           }
         })
       )
@@ -167,7 +168,7 @@ function server() {
       baseDir: "./dist"
     }
   });
-  browserSync.watch(['./dist/**/*.*', '!**/*.css'], browserSync.reload);   
+  browserSync.watch(['./dist/**/*.*'], { ignored: ["**/*.html"] }, browserSync.reload);   
 }
 
 
