@@ -60,7 +60,12 @@ const paths = {
     svg: {
         src: 'src/sprite/**/*.svg',
         dest: 'src/images/'
-    }
+    },
+    scripts: {
+      src: 'src/scripts/**/*.*',
+      dest: 'dist/assets/scripts/'
+  }
+
 };
 
 // _______________for project assembly_____________________
@@ -103,13 +108,19 @@ function styles() {
 // images
 function images() {
     return gulp.src(paths.images.src)
-    .pipe(cache(imagemin(
-        {
-            optimizationLevel: 3, 
-            progressive: true,
-            interlaced: true
-        })))
+    // .pipe(cache(imagemin(
+    //     {
+    //         optimizationLevel: 3, 
+    //         progressive: true,
+    //         interlaced: true
+    //     })))
           .pipe(gulp.dest(paths.images.dest));
+}
+
+// scripts
+function scripts() {
+  return gulp.src(paths.scripts.src)
+        .pipe(gulp.dest(paths.scripts.dest));
 }
 
 // svg-спрайт
@@ -158,6 +169,7 @@ function watch() {
   gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.images.src, images);
+  gulp.watch(paths.scripts.src, scripts);
 }
 
 
@@ -182,6 +194,6 @@ function clean() {
 // //project assembly (production)
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(templates, styles, images, fonts),
+    gulp.parallel(templates, styles, images, fonts, scripts),
     gulp.parallel(watch, server)
 ));

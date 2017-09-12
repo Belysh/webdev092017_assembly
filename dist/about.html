@@ -49,18 +49,128 @@
 		<svg class="arrow" width="26" height="16">
 			<use class="arrow__down" xlink:href="assets/images/sprite.svg#arrow_down"></use>
 		</svg>
-		<div class="bottom">
-			<svg class="bottom__bg--left" width="901" height="1013">
-				<use class="bottom__left" xlink:href="assets/images/sprite.svg#about_bg_left"></use>
-			</svg>
-			<svg class="bottom__bg--right" width="900" height="1009">
-				<use class="bottom__right" xlink:href="assets/images/sprite.svg#about_bg_right"></use>
-			</svg>
+	</div>
+</section>
+<section class="section-2">
+	<div class="section-2__left">
+		<div class="section-2__title">
+			<h1 class="title title--big">Обо мне</h1>
 		</div>
+		<div class="section-2__info">
+			<div class="section-2__avatar"><img class="section-2__image" src="assets/images/ava_big.png" alt=""></div>
+			<div class="section-2__text">
+				<div class="section-2__subtitle title">Кто я</div>
+				<div class="section-2__myInfo">
+					<p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+					<p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-2__right">
+		<div class="section-2__title">
+			<h1 class="title">Чем я могу быть</h1><br>
+			<h1 class="title title--noline">вам полезен</h1>
+		</div>
+		<div class="section-2__text">
+			<p class="section-2__myInfo">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+		</div>
+		<div class="section-2__skills">
+			<div class="skills">
+				<div class="skills__frontend">
+					<div class="skills__title">Frontend</div>
+					<ul class="skills__list">
+						<li class="skills__item">
+							<svg class="skills__elem" id="html"></svg>
+							<div class="skills__html skill__text">HTML5</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="css"></svg>
+							<div class="skills__css skill__text">CSS3</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="js"></svg>
+							<div class="skills__js skill__text">JavaScript &amp; jQuery</div>
+						</li>
+					</ul>
+				</div>
+				<div class="skills__backend">
+					<div class="skills__title">Backend</div>
+					<ul class="skills__list">
+						<li class="skills__item">
+							<svg class="skills__elem" id="php"> </svg>
+							<div class="skills__php skill__text">PHP</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="mySql"></svg>
+							<div class="skills__mySql skill__text">mySQL</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="node"></svg>
+							<div class="skills__node skill__text">Node.js &amp; npm</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="mongo"></svg>
+							<div class="skills__mongo skill__text">Mongo.db</div>
+						</li>
+					</ul>
+				</div>
+				<div class="skills__workflow">
+					<div class="skills__title">WorkFlow</div>
+					<ul class="skills__list">
+						<li class="skills__item">
+							<svg class="skills__elem" id="git"></svg>
+							<div class="skills__git skill__text">Git</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="gulp"></svg>
+							<div class="skills__gulp skill__text">Gulp</div>
+						</li>
+						<li class="skills__item">
+							<svg class="skills__elem" id="bower"></svg>
+							<div class="skills__bower skill__text">bower</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<svg class="bottom__bg--left" width="901" height="1013">
+			<use class="bottom__left" xlink:href="assets/images/sprite.svg#about_bg_left"></use>
+		</svg>
+		<svg class="bottom__bg--right" width="900" height="1009">
+			<use class="bottom__right" xlink:href="assets/images/sprite.svg#about_bg_right"></use>
+		</svg>
 	</div>
 </section>
 <section class="section-3">
-	<div class="map"></div>
+	<div class="map" id="map"></div>
+	<div class="section-3__contacts">
+		<div class="contact">
+			<h1 class="title contact__title">Контакты</h1>
+			<div class="contact__socials">
+				<ul class="contact__list">
+					<li class="contact__item"><a class="contact__link" href="skype:SkypeUser?call">
+							<svg class="contact__box" width="24" height="24">
+								<use class="contact__skype-icon contact__icon" xlink:href="assets/images/sprite.svg#skype"></use>
+							</svg><span class="contact__skype-text">skype_kdn</span></a></li>
+					<li class="contact__item"><a class="contact__link" href="mailto:astahov@gmail.com">
+							<svg class="contact__box" width="23" height="17">
+								<use class="contact__mail-icon contact__icon" xlink:href="assets/images/sprite.svg#envelope"></use>
+							</svg><span class="contact__mail-text">astahov@gmail.com</span></a></li>
+					<li class="contact__item"><a class="contact__link" href="tel:+7 931 200 93 24">
+							<svg class="contact__box" width="19" height="18">
+								<use class="contact__phone-icon contact__icon" xlink:href="assets/images/sprite.svg#phone"></use>
+							</svg><span class="contact__phone-text">+7 931 200 93 24</span></a></li>
+					<li class="contact__item"><span class="contact__map">
+							<svg class="contact__box" width="19" height="24">
+								<use class="contact__map-icon contact__icon" xlink:href="assets/images/sprite.svg#map_marker"></use>
+							</svg><span class="contact__map-text">г.Новосибирск, ул. Инская, д. 5</span></span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="section-4">
 	<div class="section-4__top">
@@ -79,14 +189,17 @@
 				<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
 						<svg class="socials-footer__box" width="36" height="36">
 							<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#vk_round"></use>
+							<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#vk_round"></use>
 						</svg></a></li>
 				<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
 						<svg class="socials-footer__box" width="36" height="36">
 							<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#github_round"></use>
+							<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#github_round"></use>
 						</svg></a></li>
 				<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
 						<svg class="socials-footer__box" width="36" height="36">
 							<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#in_round"></use>
+							<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#in_round"></use>
 						</svg></a></li>
 			</ul>
 		</div>
@@ -100,3 +213,7 @@
 		</div>
 	</div>
 </section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_7rbiILzu1_9WsTomzKQZO0FMmtNePU"></script>
+<script src="assets/scripts/components/map.js"></script>
+<script src="assets/scripts/components/snap.svg-min.js"></script>
+<script src="assets/scripts/components/skill.js"></script>

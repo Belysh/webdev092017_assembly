@@ -9,14 +9,16 @@
 }
 
 .enter__title {
-    position: relative;
     margin-bottom: 40px;
     margin-top: 35px;
 }
 
-.enter__text {
+.title {
     font-family: BernierRegular;
     font-size: 35px;
+    position: relative;
+    line-height: 35px;
+    display: inline-block;
     &:after, &:before {
         content: "";
         display: inline-block;

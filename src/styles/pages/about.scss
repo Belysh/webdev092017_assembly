@@ -82,38 +82,62 @@
     transition: all 0.5;
 }
 
-.bottom {
-    display: flex;
-    justify-content: center;
-    font-size: 0;   
-}
 
-.bottom__bg--left, .bottom__bg--right  {
-    font-size: 12px;
-    position: absolute;
-    display: none;
-}
 
-.bottom__bg--left {
-    left: 0;
-}
 
-.bottom__bg--right {
-    right: 0;
-}
-
-.bottom__left {
-    fill: #efeee9;
-}
-
-.bottom__right {
-    fill: #eeebdf;
-}
 
 .section-3 {
     height: 100vh;
-    border: 2px solid red;
+    position: relative;
 }
+
+
+.map {
+
+    height: 100%;
+}
+
+.section-3__contacts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 45px 39px;
+    max-width: 380px;
+    width: 380px;
+    height: 290px;
+    background-color: rgba(252, 252, 252, 0.851);
+    border-radius: 5px;
+}
+
+.contact__item {
+    margin-top: 17px;
+}
+
+.contact__link, .contact__map {
+    display: flex;
+    align-items: center;
+    color: #455a64;
+}
+
+.contact__box {
+    margin-right: 10px;
+}
+
+.contact__icon {
+    fill: #00bea4;
+}
+
+
+
 
 .section-4 {
     height: 137px;
@@ -141,7 +165,17 @@
 }
 
 .socials-footer__icon {
-    fill: red;
+    stroke-width: 1px;
+    fill-opacity: 0.5;
+}
+.socials-footer__icon--hover {
+    opacity: 0;
+    fill: #fff;
+    transform-origin: 50% 50%;
+    transition: all 0.5s;
+}
+.socials-footer__link:hover .socials-footer__icon--hover {
+    opacity: 1;
 }
 
 .nav-footer__link {
@@ -178,8 +212,127 @@
 }
 
 .section-4__info {
-
     max-width: 500px;
     font-family: RobotoLight;
-
 }
+
+
+
+
+
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.section-2__left {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    width: 50%;
+}
+
+.section-2__right {
+    width: 50%;
+    padding-left: 42px;
+    padding-right: 65px;
+}
+
+.section-2__title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-2__info {
+    width: 443px;
+}
+
+.title--big {
+    font-size: 63px;
+    color: #373e42;
+    line-height: 63px;
+}
+.section-2__image {
+    display: block;
+    margin: 0 auto;
+}
+
+.section-2__text {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section-2__myInfo {
+    text-align: left;
+    font-family: RobotoRegular;
+}
+
+.title--noline:after, .title--noline:before {
+    display: none;
+}
+
+.skills__title {
+    font-size: 28px;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.skills__item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skill__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00bfa5;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.bottom__bg--left, .bottom__bg--right  {
+    font-size: 12px;
+}
+
+.bottom__bg--left {
+    left: 0;
+}
+
+.bottom__bg--right {
+    right: 0;
+}
+
+.bottom__left {
+    fill: #efeee9;
+}
+
+.bottom__right {
+    fill: #eeebdf;
+}
+
+
+
+
+
+
+
+
+
+
