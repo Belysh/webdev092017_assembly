@@ -61,12 +61,12 @@
     border-radius: 50%;
 }
 
-.main__name {
+.name__i {
     font-size: 28px;
     text-align: center;
 }
 
-.main__info {
+.name__info {
     font-family: RobotoRegular;
     text-align: center;
     margin-top: 10px;
@@ -80,6 +80,10 @@ margin-top: 38px;
 
 .icons {
     display: flex;
+}
+
+.main__socials .icon {
+    fill: #70d1c6 !important;
 }
 
 .icons__item + .icons__item {

@@ -16,22 +16,29 @@ block main
       .main__info Личный сайт веб разработчика
     .main__socials
       ul.icons
-        li.icons__item
-          a(href="#" class='icons__link')
-            i.fa.fa-vk(aria-hidden='true')
-        li.icons__item
-          a(href="#" class='icons__link')
-            i.fa.fa-github-alt(aria-hidden='true')
-        li.icons__item
-          a(href="#" class='icons__link')
-            i.fa.fa-linkedin(aria-hidden='true')
-  nav.nav
-    ul.nav__list
-      li.nav__item
-        a(href="#").nav__link Мои работы
-      li.nav__item
-        a(href="#").nav__link Обо мне
-      li.nav__item
-        a(href="#").nav__link Блог
+          li.icons__item
+              a(href="#" class='icons__link')
+                  svg(width="31" height="17").vk
+                      use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+          li.icons__item
+              a(href="#" class='icons__link')
+                  svg(width="26" height="22").github
+                      use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+          li.icons__item
+              a(href="#" class='icons__link')
+                  svg(width="24" height="22").in
+                      use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+    nav.nav
+      ul.nav__list
+        li.nav__item
+          a(href="#").nav__link Мои работы
+        li.nav__item
+          a(href="about.html").nav__link Обо мне
+        li.nav__item
+          a(href="#").nav__link Блог
+block bottom
+  .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+
+
 
 

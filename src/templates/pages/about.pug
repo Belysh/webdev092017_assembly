@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="" name="description")
+    meta(content="" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    link(rel='stylesheet' href='assets/styles/main.min.css')
+
+section.section-1
+    .section-1__header
+        .section-1__left
+            ul.icons
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="31" height="17").vk
+                            use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="26" height="22").github
+                            use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="24" height="22").in
+                            use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+        .section-1__right
+            .menu-hamb
+                svg(width="40" height="35").hamburger
+                    use(xlink:href="assets/images/sprite.svg#hamburger").hamburger__icon
+    .section-1__middle
+        .avatar
+            .avatar__box
+                img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+        .name
+            h1.name__i Владимир Астахов
+            .name__info Личный сайт веб разработчика
+    .section-1__bottom
+        svg(width="26" height="16").arrow
+            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__down
+        .bottom
+            svg(width="901" height="1013").bottom__bg--left
+                use(xlink:href="assets/images/sprite.svg#about_bg_left").bottom__left
+            svg(width="900" height="1009").bottom__bg--right
+                use(xlink:href="assets/images/sprite.svg#about_bg_right").bottom__right
+section.section-3
+    .map
+section.section-4
+    .section-4__top
+        .section-4__menu
+            nav.nav-footer
+                ul.nav-footer__list
+                    li.nav-footer__item
+                        a(href="#").nav-footer__link Мои работы
+                    li.nav-footer__item
+                        a(href="about.html").nav-footer__link Обо мне
+                    li.nav-footer__item
+                        a(href="#").nav-footer__link Блог
+                    li.nav-footer__item
+                        a(href="login.html").nav-footer__link Авторизация
+        .section-4__socials
+            ul.socials-footer
+                li.socials-footer__item
+                    a(href="#").socials-footer__link 
+                        svg(width="36" height="36").socials-footer__box
+                            use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon
+                li.socials-footer__item
+                    a(href="#").socials-footer__link 
+                        svg(width="36" height="36").socials-footer__box
+                            use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon
+                li.socials-footer__item
+                    a(href="#").socials-footer__link 
+                        svg(width="36" height="36").socials-footer__box
+                            use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon
+
+    .section-4__bottom
+        .section-4__info
+            .about-short Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .section-4__copyright
+              .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+
+
+            
+

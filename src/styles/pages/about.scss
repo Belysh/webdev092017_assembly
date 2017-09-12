@@ -1,0 +1,185 @@
+.section-1 {
+    min-height: 100vh;
+    position: relative;
+    height: auto;
+    background-image: url("../images/bg_welcome.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-1__header {
+    padding: 32px 32px 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons__item + .icons__item {
+    margin-left: 25px;
+}
+
+.hamburger__icon {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.vk {
+    width: 31px;
+    height: 17px;
+}
+
+.github {
+    width: 26px;
+    height: 22px;
+}
+
+.in {
+    width: 24px;
+    height: 22px;
+}
+
+.icon {
+    fill: #c1d6d6;
+}
+
+.icons__link:hover .icon {
+    fill: #fff;
+}
+
+.section-1__middle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-1__middle .name {
+    color: #fff;
+}
+
+.section-1__middle .name__info {
+    font-family: RobotoLight;
+}
+
+
+.section-1__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 137px;
+}
+
+.arrow__down {
+    fill: #beced5;
+    width: 26px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.arrow:hover .arrow__down {
+    fill: #fff;
+    transform-origin: 50% 50%;
+    transition: all 0.5;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 0;   
+}
+
+.bottom__bg--left, .bottom__bg--right  {
+    font-size: 12px;
+    position: absolute;
+    display: none;
+}
+
+.bottom__bg--left {
+    left: 0;
+}
+
+.bottom__bg--right {
+    right: 0;
+}
+
+.bottom__left {
+    fill: #efeee9;
+}
+
+.bottom__right {
+    fill: #eeebdf;
+}
+
+.section-3 {
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.section-4 {
+    height: 137px;
+    margin-top: -137px;
+}
+
+.section-4__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.socials-footer {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.socials-footer__item {
+    cursor: pointer;
+}
+
+.socials-footer__item + .socials-footer__item {
+    margin-left: 10px;
+}
+
+.socials-footer__icon {
+    fill: red;
+}
+
+.nav-footer__link {
+    display: inline-block;
+    padding: 30px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-footer__link:first-child {
+    padding-left: 0;
+}
+
+.nav-footer__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-4__top {
+    background-color: rgb(55, 62, 66);
+    opacity: 0.851;
+}
+
+.section-4__bottom {
+    border-top: 1px solid #646a6d;
+    padding: 0 35px;
+    height: 73px;
+    align-items: center;
+    background-color: rgb(55, 62, 66);
+    opacity: 0.851;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.section-4__info {
+
+    max-width: 500px;
+    font-family: RobotoLight;
+
+}
