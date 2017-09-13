@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title #{title}
+    title Обо мне
     meta(content="" name="description")
     meta(content="" name="keywords")
     meta(content="width=device-width, initial-scale=1" name="viewport")
@@ -33,16 +33,18 @@ section.section-1
         .avatar
             .avatar__box
                 img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
-        .name
-            h1.name__i Владимир Астахов
-            .name__info Личный сайт веб разработчика
+            .avatar__title.avatar__title--about
+                h1.avatar__i Владимир Астахов
+                .avatar__info.avatar__info--about Личный сайт веб разработчика
     .section-1__bottom
         svg(width="26" height="16").arrow
             use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__down
 section.section-2
     .section-2__left
         .section-2__title
-            h1.title.title--big Обо мне
+            h1.title.title--big.title-about Обо мне
+                svg(width="357" height="125").title-about--bg
+                    use(xlink:href="assets/images/sprite.svg#about_header")
         .section-2__info
             .section-2__avatar
                 img(src="assets/images/ava_big.png", alt="").section-2__image
@@ -108,7 +110,7 @@ section.section-3
     .map#map
     .section-3__contacts
         .contact
-            h1.title.contact__title Контакты
+            h1.title Контакты
             .contact__socials
                 ul.contact__list
                     li.contact__item
@@ -137,11 +139,11 @@ section.section-4
             nav.nav-footer
                 ul.nav-footer__list
                     li.nav-footer__item
-                        a(href="#").nav-footer__link Мои работы
+                        a(href="works.html").nav-footer__link Мои работы
                     li.nav-footer__item
                         a(href="about.html").nav-footer__link Обо мне
                     li.nav-footer__item
-                        a(href="#").nav-footer__link Блог
+                        a(href="blog.html").nav-footer__link Блог
                     li.nav-footer__item
                         a(href="login.html").nav-footer__link Авторизация
         .section-4__socials

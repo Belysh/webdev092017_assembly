@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Обо мне</title>
 		<meta content="" name="description">
 		<meta content="" name="keywords">
 		<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -39,10 +39,10 @@
 	<div class="section-1__middle">
 		<div class="avatar">
 			<div class="avatar__box"><img class="avatar__img" src="assets/images/ava.png" alt="avatar"></div>
-		</div>
-		<div class="name">
-			<h1 class="name__i">Владимир Астахов</h1>
-			<div class="name__info">Личный сайт веб разработчика</div>
+			<div class="avatar__title avatar__title--about">
+				<h1 class="avatar__i">Владимир Астахов</h1>
+				<div class="avatar__info avatar__info--about">Личный сайт веб разработчика</div>
+			</div>
 		</div>
 	</div>
 	<div class="section-1__bottom">
@@ -54,7 +54,11 @@
 <section class="section-2">
 	<div class="section-2__left">
 		<div class="section-2__title">
-			<h1 class="title title--big">Обо мне</h1>
+			<h1 class="title title--big title-about">Обо мне
+				<svg class="title-about--bg" width="357" height="125">
+					<use xlink:href="assets/images/sprite.svg#about_header"></use>
+				</svg>
+			</h1>
 		</div>
 		<div class="section-2__info">
 			<div class="section-2__avatar"><img class="section-2__image" src="assets/images/ava_big.png" alt=""></div>
@@ -148,7 +152,7 @@
 	<div class="map" id="map"></div>
 	<div class="section-3__contacts">
 		<div class="contact">
-			<h1 class="title contact__title">Контакты</h1>
+			<h1 class="title">Контакты</h1>
 			<div class="contact__socials">
 				<ul class="contact__list">
 					<li class="contact__item"><a class="contact__link" href="skype:SkypeUser?call">
@@ -177,9 +181,9 @@
 		<div class="section-4__menu">
 			<nav class="nav-footer">
 				<ul class="nav-footer__list">
-					<li class="nav-footer__item"><a class="nav-footer__link" href="#">Мои работы</a></li>
+					<li class="nav-footer__item"><a class="nav-footer__link" href="works.html">Мои работы</a></li>
 					<li class="nav-footer__item"><a class="nav-footer__link" href="about.html">Обо мне</a></li>
-					<li class="nav-footer__item"><a class="nav-footer__link" href="#">Блог</a></li>
+					<li class="nav-footer__item"><a class="nav-footer__link" href="blog.html">Блог</a></li>
 					<li class="nav-footer__item"><a class="nav-footer__link" href="login.html">Авторизация</a></li>
 				</ul>
 			</nav>

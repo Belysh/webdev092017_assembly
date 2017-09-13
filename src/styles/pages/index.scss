@@ -52,27 +52,28 @@
 }
 
 .avatar__box {
-    display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px auto 20px;
     width: 147px;
     height: 147px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.name__i {
+.avatar__i {
     font-size: 28px;
     text-align: center;
 }
 
-.name__info {
+.avatar__info {
     font-family: RobotoRegular;
     text-align: center;
     margin-top: 10px;
 
 }
 
+
+
+// социалки
 .main__socials {
 margin-bottom: 40px;
 margin-top: 38px;
@@ -95,6 +96,9 @@ margin-top: 38px;
     color: #70d1c6;
 }
 
+
+
+// меню
 .nav {
     width: 380px;
     background-color: rgba(0, 191, 165, 0.851);
