@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Мои работы
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+    body
+      .works
+        section.section-1.works__section-1
+            svg(width="1176" height="313").svg-bg.svg-bg__portfolio
+                use(xlink:href="assets/images/sprite.svg#portfolio_header").svg-bg__img
+            .section-1__header
+                .section-1__left
+                    ul.icons
+                        li.icons__item
+                            a(href="#" class='icons__link')
+                                svg(width="31" height="17").vk
+                                    use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                        li.icons__item
+                            a(href="#" class='icons__link')
+                                svg(width="26" height="22").github
+                                    use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                        li.icons__item
+                            a(href="#" class='icons__link')
+                                svg(width="24" height="22").in
+                                    use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+                .section-1__right
+                    .menu-hamb
+                        svg(width="40" height="35").menu-hamb__box
+                            use(xlink:href="assets/images/sprite.svg#hamburger").menu-hamb__icon
+            .section-1__middle
+                .avatar
+                    .avatar__box
+                        img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                    .avatar__title.avatar__title--white
+                        h1.avatar__i Владимир Астахов
+                        .avatar__info.avatar__info--white Личный сайт веб разработчика
+            .section-1__bottom.works__bottom
+                svg(width="26" height="16").arrow__box
+                    use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__down
+        section.works__section-2
+            .section-2__content
+                .container-svg
+                    h1.title.title--big.works__title Мои работы
+                        svg(width="506" height="165").svg-bg.svg-bg__works
+                            use(xlink:href="assets/images/sprite.svg#works_header").svg-bg__img.svg-bg__img-works
+                    svg.arrow-works-bg
+                            use(xlink:href="assets/images/sprite.svg#bg").arrow-works-bg__img
+                .section-2__wrap
+                    .section-2__site
+                        .view-site
+                            ul.slider__list
+                                li.slider__item
+                                    img(src="assets/images/works/work-1.png", alt="work-1").slider__img
+                    .section-2__site-name
+                        h1.title.title--noline Сайт школы онлайн
+                        h1.title.title--noline образования
+                        .section-2__tech
+                            .tech Html, Css, Javascript
+                        .section-2__button
+                            .button
+                                a.button__link(href='#', <svg='', width='20', height='19')
+                                    svg(width="20" height="19").link__box-svg
+                                        use.link__icon(xlink:href='assets/images/sprite.svg#link')
+                                    | 		Посмотреть сайт
+            .control
+                .control__prev
+                    svg(width="43" height="27").arrow-portfolio__box-prev
+                        use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
+                .control__next
+                    svg(width="43" height="27").arrow-portfolio__box-next
+                        use(xlink:href="assets/images/sprite.svg#portf_arrow_up").arrow-portfolio__icon-next
+            .dot
+                ul.dot__list
+                    li.dot__item
+                        a.dot__link(src="#").active
+                    li.dot__item
+                        a.dot__link(src="#")
+        section.section-3.works__section-3
