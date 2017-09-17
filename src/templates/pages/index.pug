@@ -1,43 +1,52 @@
-extends ../template
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Main
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
 
-block variables
-  - var title = 'Welcome'
-
-block login 
-  .login
-    a.login__link(href="login.html") Авторизоваться
-block main
-  .main
-    .avatar
-      .avatar__box
-        img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
-      .avatar__title
-        h1.avatar__i Владимир Астахов
-        .avatar__info Личный сайт веб разработчика
-    .main__socials
-      ul.icons
-          li.icons__item
-              a(href="#" class='icons__link')
-                  svg(width="31" height="17").vk
-                      use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
-          li.icons__item
-              a(href="#" class='icons__link')
-                  svg(width="26" height="22").github
-                      use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
-          li.icons__item
-              a(href="#" class='icons__link')
-                  svg(width="24" height="22").in
-                      use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
-    nav.nav
-      ul.nav__list
-        li.nav__item
-          a(href="works.html").nav__link Мои работы
-        li.nav__item
-          a(href="about.html").nav__link Обо мне
-        li.nav__item
-          a(href="blog.html").nav__link Блог
-block bottom
-  .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+body
+  .welcome
+    section.section.section--small
+      .welcome__top
+        .login
+          a.login__link(href="login.html") Авторизоваться
+      .welcome__center
+        .main
+          .avatar
+            .avatar__box
+              img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+            .avatar__title
+              h1.avatar__i Владимир Астахов
+              .avatar__info Личный сайт веб разработчика
+          .main__socials
+            ul.icons
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="31" height="17").vk
+                            use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="26" height="22").github
+                            use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                li.icons__item
+                    a(href="#" class='icons__link')
+                        svg(width="24" height="22").in
+                            use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+          nav.nav
+            ul.nav__list
+              li.nav__item
+                a(href="works.html").nav__link Мои работы
+              li.nav__item
+                a(href="about.html").nav__link Обо мне
+              li.nav__item
+                a(href="blog.html").nav__link Блог
+      .welcome__bottom
+        .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
 
 
 

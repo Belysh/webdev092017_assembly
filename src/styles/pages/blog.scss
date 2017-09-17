@@ -1,8 +1,29 @@
-.section-1__header--container {
+.blog {
+    width: 100%;
+    height: 100%;
+}
+.blog-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: auto;
+    position: relative;
+    background-position: top center;
+    
+}
+
+
+.blog-section-1--container {
     max-width: 1200px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 28px 30px 0 30px;
+    @include size-320 {
+        padding: 10px 10px 0 10px;
+    }   
 }
 
 .title--big-white {
@@ -11,33 +32,123 @@
     color: #fff;
 }
 
-.section-1--blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: auto;
-}
-
-.section__middle--blog {
+.blog-section-1__middle {
     padding-bottom: 70px;
-}
-
-.blog-2 {
-    background-color: #fff;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.blog-2__left {
-    max-width: 390px;
-    margin-right: 120px;
-    text-align: right;
-    padding-top: 70px;
-    padding-left: 125px;
+    @include size-768 {
+        padding-bottom: 90px;
+    }
 }
 
 .avatar__blog {
     color: #fff;
+    text-align: center;
+}
+
+.title--blog {
+    @include size-768 {
+        font-size: 50px;
+        line-height: 50px;
+    }  
+    @include size-320 {
+        font-size: 35px;
+        line-height: 35px;
+    }          
+}
+
+.avatar__info--blog {
+    @include size-768 {
+        font-size: 14px;
+    }   
+}
+.avatar__box--blog {
+    margin: 20px auto 20px;
+}
+
+.blog-section-1__container-svg {
+    height: 0;
+    width: 100%;
+    padding-top: 17.7346%;
+    position: absolute;
+    bottom: -70px;
+    display: none;
+}
+
+.blog-section-1__box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.blog-section-1__icon {
+    fill: #fff;
+}
+
+.blog-section-1__bottom {
+    display: none;
+    margin: 0 auto 50px;
+    @include size-768 {
+        display: block;
+
+
+    }
+}
+
+
+
+
+// section-2_____________________________________
+.blog-section-2 {
+    background-color: #fff;
+}
+
+.blog-section-2__content {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    @include size-1200 {
+        padding-right: 7.5%;
+
+    }
+}
+
+.blog-section-2__left {
+    margin-right: -15%;
+    text-align: right;
+    padding-top: 70px;
+    padding-left: 125px;
+    position: absolute;
+    right: 100%;
+    width: 30%; 
+    @include size-1200 {
+        width: 25.9%;
+            margin-right: 0; 
+    text-align: right;
+    padding-top: 70px;
+    padding-left: 0;
+    position: absolute;
+    right: 70%;
+    }
+    @include size-768 {
+        display: none;
+    }
+}
+
+.blog-section-2__center {
+    width: 80%;
+    padding-top: 70px;
+    padding-right: 10px;
+    @include size-1200 {
+        width: 58.33%;
+        padding-right: 20px;
+    }
+    @include size-768 {
+        width: 100%;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 }
 
 .article-list__link {
@@ -54,19 +165,24 @@
 }
 
 
-.blog-2__center {
-    max-width: 980px;
-    padding-top: 70px;
-}
+
 
 .article {
     padding-bottom: 70px;
+    @include size-768 {
+        padding-bottom: 50px;
+
+    }
+    @include size-320 {
+        padding-bottom: 30px;
+
+    }
     &:first-child:after {
         content: "";
         display: inline-block;
         height: 5px;
         background-color: #f1f1f2;
-        width: 681px;
+        width: 100%;
     }
 }
 
@@ -74,13 +190,42 @@
     color: #00bfa5;
     font-family: RobotoRegular;
     padding: 30px 0;
+    @include size-768 {
+        padding: 20px 0 20px;
+        font-size: 14px;
+
+    }
 }
 
 .article__text > p {
     margin-bottom: 25px;
     font-family: RobotoRegular;
+    @include size-320 {
+        margin-bottom: 20px;
+ 
+     } 
+}
+
+.article__text p:last-child {
+    margin-bottom: 0;
+}
+
+.article__text {
+    @include size-768 {
+       font-size: 14px;
+
+    } 
 }
 
 .article__code {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    @include size-768 {
+        margin-bottom: 50px;
+
+    }
+    @include size-320 {
+        margin-bottom: 30px;
+
+    }
 }

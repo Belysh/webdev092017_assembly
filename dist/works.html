@@ -11,12 +11,12 @@
 	</head>
 	<body>
 		<div class="works">
-			<section class="section-1 works__section-1">
+			<section class="section works__section-1">
 				<svg class="svg-bg svg-bg__portfolio" width="1176" height="313">
 					<use class="svg-bg__img" xlink:href="assets/images/sprite.svg#portfolio_header"></use>
 				</svg>
-				<div class="section-1__header">
-					<div class="section-1__left">
+				<div class="section-1-header">
+					<div class="section-1-header__left">
 						<ul class="icons">
 							<li class="icons__item"><a class="icons__link" href="#">
 									<svg class="vk" width="31" height="17">
@@ -32,7 +32,7 @@
 									</svg></a></li>
 						</ul>
 					</div>
-					<div class="section-1__right">
+					<div class="work-section-1__right">
 						<div class="menu-hamb">
 							<svg class="menu-hamb__box" width="40" height="35">
 								<use class="menu-hamb__icon" xlink:href="assets/images/sprite.svg#hamburger"></use>
@@ -40,7 +40,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-1__middle">
+				<div class="section-1-header__middle">
 					<div class="avatar">
 						<div class="avatar__box"><img class="avatar__img" src="assets/images/ava.png" alt="avatar"></div>
 						<div class="avatar__title avatar__title--white">
@@ -49,9 +49,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-1__bottom works__bottom">
-					<svg class="arrow__box" width="26" height="16">
-						<use class="arrow__down" xlink:href="assets/images/sprite.svg#arrow_down"></use>
+				<div class="section-1-header__bottom works__bottom">
+					<svg class="arrow arrow--toDown" width="26" height="16">
+						<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
 					</svg>
 				</div>
 			</section>
@@ -109,7 +109,120 @@
 					</ul>
 				</div>
 			</section>
-			<section class="section-3 works__section-3"></section>
+			<section class="works-section-3 section">
+				<div class="works-section-3__title">
+					<div class="title-box">
+						<h1 class="title title--big title--twoLine">Что обо мне говорят</h1>
+						<div class="works-section-3__container-svg">
+							<svg class="svg-bg svg-bg__works" viewBox="0 0 506 165">
+								<use class="svg-bg__img svg-bg__img-works" xlink:href="assets/images/sprite.svg#about_header"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="works-section-3__content">
+					<div class="works-section-3__left">
+						<div class="note">
+							<div class="note__icon-box"><i class="fa fa-quote-left note__icon"></i></div>
+							<div class="note__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+							<div class="note__author">
+								<div class="note__img"><img class="note__ava-1" src="assets/images/dima.jpg" alt=""></div>
+								<div class="note__who">
+									<div class="note__author-name">Ковальчук Дмитрий</div>
+									<div class="note__author-prof">основатель LoftSchool</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="works-section-3__right">
+						<div class="note">
+							<div class="note__icon-box"><i class="fa fa-quote-left note__icon"></i></div>
+							<div class="note__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+							<div class="note__author">
+								<div class="note__img"><img class="note__ava" src="assets/images/vova.jpg" alt=""></div>
+								<div class="note__who">
+									<div class="note__author-name">Владимир Сабанцев</div>
+									<div class="note__author-prof">преподаватель</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="works-section-3__main">
+					<div class="conect">
+						<h1 class="title conect__title">Связаться со мной</h1>
+						<form class="connect__form" action="#">
+							<div class="conect__input-box">
+								<input class="form__input conect__name" type="text" placeholder="Имя">
+							</div>
+							<div class="conect__input-box">
+								<input class="form__input conect__mail" type="mail" placeholder="E-mail">
+							</div>
+							<div class="conect__input-box">
+								<input class="form__input conect__message" type="textarea" placeholder="Ваше сообщение">
+							</div>
+							<div class="conect__button">
+								<ul class="connect__list">
+									<li class="conect__item">
+										<button class="conect__link" type="submit">Отправить</button>
+									</li>
+									<li class="conect__item">
+										<button class="conect__link" type="reset">Очистить</button>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="works-section-3__arrow">
+					<svg class="arrow arrow--toUp" width="26" height="16">
+						<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
+					</svg>
+				</div>
+			</section>
+			<section class="works__section-4">
+				<div class="footer">
+					<div class="footer__top">
+						<div class="footer__menu">
+							<nav class="nav-footer">
+								<ul class="nav-footer__list">
+									<li class="nav-footer__item"><a class="nav-footer__link" href="works.html">Мои работы</a></li>
+									<li class="nav-footer__item"><a class="nav-footer__link" href="about.html">Обо мне</a></li>
+									<li class="nav-footer__item"><a class="nav-footer__link" href="blog.html">Блог</a></li>
+									<li class="nav-footer__item"><a class="nav-footer__link" href="login.html">Авторизация</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__socials">
+							<ul class="socials-footer">
+								<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+										<svg class="socials-footer__box" width="36" height="36">
+											<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#vk_round"></use>
+											<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#vk_round"></use>
+										</svg></a></li>
+								<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+										<svg class="socials-footer__box" width="36" height="36">
+											<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#github_round"></use>
+											<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#github_round"></use>
+										</svg></a></li>
+								<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+										<svg class="socials-footer__box" width="36" height="36">
+											<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#in_round"></use>
+											<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#in_round"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__info">
+							<div class="about-short">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
+						</div>
+						<div class="footer__copyright">
+							<div class="bottom-text">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>

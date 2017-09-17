@@ -1,11 +1,36 @@
+.login {
+    width: 100;
+    height: 100%;
+}
+.section--login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.section--small {
+    box-shadow: none !important;
+}
+
+.login__center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
 .enter {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 380px;
+    min-width: 380px;
     background-color: rgba(252, 252, 252, 0.8);
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 5px 5px;
+    @include size-320 {
+        min-width: 300px;
+    }
 }
 
 .enter__title {
@@ -16,6 +41,12 @@
 .title {
     font-family: BernierRegular;
     font-size: 35px;
+    @include size-768 {
+        font-size: 30px;
+    }
+    @include size-320 {
+        font-size: 21px;
+    }
     position: relative;
     line-height: 35px;
     display: inline-block;
@@ -43,14 +74,16 @@
 .form {
     display: flex;
     flex-direction: column;
+    padding: 0 20px 0;
+    width: 100%;
 }
 
 
 .login-name, .password {
     overflow: hidden;
     font-size: 0;
-    width: 340px;
 }
+
 .login-name__field, .password__field {
     outline: 0;
     border: none;
@@ -172,10 +205,11 @@
     width: 8px;
     height: 8px;
     vertical-align: middle;
-    transform: translate(0, -2px);
+    transform: translate(0, -2px);   
+}
 
-
-      
+.radio__item:checked ~ .radio__text {
+    color: rgb(0, 191, 165);
 }
 
 .radio__text {
