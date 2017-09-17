@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="blog">
-			<section class="section blog-section-1">
+			<section class="blog-section-1">
 				<div class="blog-section-1__header blog-section-1--container">
 					<div class="blog-section-1__left">
 						<ul class="icons">
@@ -55,10 +55,15 @@
 						<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
 					</svg>
 				</div>
-				<div class="blog-section-1__container-svg">
-					<svg class="blog-section-1__box" viewBox="0 0 2032 360.368">
-						<use class="blog-section-1__icon" xlink:href="assets/images/sprite.svg#bg"></use>
-					</svg>
+				<div class="section-1-header-triangle">
+					<div class="triangle-box">
+						<svg class="traingle-box__item" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 900 180" preserveaspectratio="none">
+							<polygon class="traingle-box__left" points="0,0   0,180   900,180   0,0"></polygon>
+						</svg>
+						<svg class="traingle-box__item" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 900 180" preserveaspectratio="none">
+							<polygon class="traingle-box__right" points="0,180   900,180   900,0   0,180"></polygon>
+						</svg>
+					</div>
 				</div>
 			</section>
 			<section class="blog-section-2">
@@ -136,5 +141,7 @@
 				</div>
 			</section>
 		</div>
+		<script src="assets/scripts/components/jquery-3.2.1.min.js"></script>
+		<script src="assets/scripts/components/common.js"></script>
 	</body>
 </html>

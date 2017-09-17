@@ -10,7 +10,7 @@ html
         link(rel='stylesheet' href='assets/styles/main.min.css')
     body
         .blog
-            section.section.blog-section-1
+            section.blog-section-1
                 .blog-section-1__header.blog-section-1--container
                     .blog-section-1__left
                         ul.icons
@@ -42,9 +42,12 @@ html
                 .blog-section-1__bottom
                     svg(width="26" height="16").arrow.arrow--toDown
                         use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
-                .blog-section-1__container-svg
-                    svg(viewBox="0 0 2032 360.368").blog-section-1__box
-                        use(xlink:href="assets/images/sprite.svg#bg").blog-section-1__icon
+                .section-1-header-triangle
+                    .triangle-box
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__left(points='0,0   0,180   900,180   0,0')
+                        svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
+                            polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
             section.blog-section-2
                 .blog-section-2__content
                     .blog-section-2__left
@@ -109,4 +112,6 @@ html
                             .about-short Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
                         .footer__copyright
                             .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+        script(src="assets/scripts/components/jquery-3.2.1.min.js")
+        script(src='assets/scripts/components/common.js')
                     
