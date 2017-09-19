@@ -52,8 +52,8 @@ html
             section.works-section-2
                 .works-section-2__top
                     h1.title.title--big.works__title Мои работы
-                        .container-svg
-                            svg(width="506" height="165").svg-bg.svg-bg__works
+                        .works-section-1__container-svg
+                            svg(viewBox='0 0 505.101 165.036').svg-bg.svg-bg__works
                                 use(xlink:href="assets/images/sprite.svg#works_header").svg-bg__img.svg-bg__img-works
                 .works-section-2__content
                     .works-section-2__left
@@ -75,14 +75,16 @@ html
                         .prev
                             ul.prev__list
                                 li.prev__item
-                                    img(src="assets/images/works/2.png", alt="").prev__slide
+                                    .prev__box
+                                        img(src="assets/images/works/2.png", alt="").prev__slide
                             .control__prev
                                 svg(width="43" height="27").arrow-portfolio__box-prev
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
                         .next
                             ul.next__list
                                 li.next__item
-                                    img(src="assets/images/works/3.png", alt="").next__slide
+                                    .next__box
+                                        img(src="assets/images/works/3.png", alt="").next__slide
                             .control__next
                                 svg(width="43" height="27").arrow-portfolio__box-next
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_up").arrow-portfolio__icon-next

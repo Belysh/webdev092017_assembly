@@ -11,8 +11,8 @@
     fill: #000;    
 }
 
-.works .traingle-box__left, .traingle-box__right {
-    fill: #faf8f0;
+.works .traingle-box__left, .works .traingle-box__right {
+    fill: #faf8f0 !important;
 }
 
 
@@ -25,6 +25,16 @@
 
 
 // section-2_____________________________
+
+.works-section-1__container-svg {
+    height: 0;
+    width: 100%;
+    padding-top: 32.608%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .works-section-2 {
     display: flex;
@@ -40,11 +50,38 @@
     justify-content: center;
     align-items: center;
     min-height: 185px;
+    @include size-768 {
+        min-height: 135px;
+    }
+    @include size-320 {
+        min-height: 95px;
+    }  
 }
 
 .works-section-2__left .title--twoLine {
     width: 275px;
+    @include size-768 {
+        width: 380px;
+    }  
+    @include size-320 {
+        width: 165px;
+    }  
     text-align: center;
+}
+
+.title.title--big.works__title {
+    @include size-768 {
+        font-size: 50px;
+        line-height: 1;
+    }
+    @include size-768 {
+        font-size: 35px;
+    }
+    &:before {
+        @include size-768 {
+            top: 50%;
+        }  
+    }
 }
 
 .container-svg {
@@ -63,7 +100,10 @@
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
-    max-height: 750px;
+    height: 750px;
+    @include size-768 {
+        height: auto;
+    }  
 
 }
 
@@ -73,7 +113,16 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+ 
     min-height: 750px;
+    @include size-768 {
+        width: 100%;
+        min-height: auto;
+        padding: 45px 0 60px;
+    } 
+    @include size-320 {
+        padding: 35px 12px;
+    } 
 }
 
 
@@ -83,6 +132,11 @@
     align-items: center;
     height: 70%;
     width: 50%;
+    @include size-768 {
+        width: 100%;
+        order: -1;
+    }  
+    background-color: #efebe0;
 }
 
 .works-section-2__control {
@@ -90,17 +144,23 @@
     justify-content: center;
     height: 30%;
     width: 50%;
+    @include size-768 {
+        width: 100%;
+    }  
 }
 
-
-
-
+.prev__list, .next__list {
+    margin: 0 auto;
+    display: flex;
+}
 
 .prev__item, .next__item {
     background-color: #bcbcbe;
-    padding-top: 10px;
     border-left: 1px solid #cacaca;
     border-right: 1px solid #cacaca;
+    display: flex;
+    margin: 0 auto;
+
 }
 
 .prev__item:after, .next__item:after {
@@ -111,23 +171,42 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(86, 84, 84, 0.5)
+    background-color: rgba(86, 84, 84, 0.4)
 }
 
 .prev, .next {
     position: relative;
+    display: flex;
+}
+
+.prev__box, .next__box {
+    width: 70%;
+display: flex;
+margin: 0 auto;
+align-items: center;
+}
+
+.prev__slide, .next__slide {
+    margin: 0 auto;
+
 }
 
 .control__prev, .control__next {
+    padding: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .control__prev:hover {
-    
+    top: 60%;
+}
+
+.control__next:hover {
+    top: 40%;
 }
    
 
@@ -137,35 +216,27 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section-2__tech {
     margin: 40px 0;
+    @include size-768 {
+        margin: 20px 0;
+    }
     width: 100%;
     text-align: center;
     
 }
 
 .tech {
-    padding: 20px 30px;;
+    padding: 20px 30px;
     text-align: center;
     display: inline-block;
     border-top: 1px solid #acd6ce;
     border-bottom: 1px solid #acd6ce;
     color: #20b5a1;
+    @include size-320 {
+        padding: 10px 0;
+        display: block;
+    }
 }
 
 .button__link {
@@ -175,6 +246,10 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    @include size-320 {
+        padding: 12px 13px;
+        font-size: 14px;
+    }
 }
 
 .link__icon {
@@ -184,22 +259,6 @@
 .link__box-svg {
     margin-right: 10px;
 }
-
-// .arrow-works-bg {
-//     position: absolute;
-//     top: 25px;
-//     left: 50%;
-//     width: 100%;
-//     height: 100%;
-//     transform: translate(-50%, 0);
-//     border: none;
-// }
-
-// .arrow-works-bg__img {
-//     fill: #faf8f0;
-// }
-
-
 
 // section-3_____________________________________________
 .works-section-3 {
@@ -227,6 +286,9 @@
 
 .title--twoLine:after, .title--twoLine:before {
     top: 25%;
+    @include size-768 {
+        top: 50%;
+    }  
 }
 
 .title-box {
