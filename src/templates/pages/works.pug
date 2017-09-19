@@ -56,7 +56,7 @@ html
                             svg(width="506" height="165").svg-bg.svg-bg__works
                                 use(xlink:href="assets/images/sprite.svg#works_header").svg-bg__img.svg-bg__img-works
                 .works-section-2__content
-                    .works-section-2__site-name
+                    .works-section-2__left
                         h1.title.title--twoLine Сайт школы онлайн образования
                         .section-2__tech
                             .tech Html, Css, Javascript
@@ -66,16 +66,23 @@ html
                                     svg(width="20" height="19").link__box-svg
                                         use.link__icon(xlink:href='assets/images/sprite.svg#link')
                                     | 		Посмотреть сайт
-                    .works-section-2__site-img
-                        .works-section-2__site
-                            .view-site
-                                ul.slider__list
-                                    li.slider__item
-                                        img(src="assets/images/works/1.png", alt="work-1").slider__img
-                        .works-section-2__control
+                    .works-section-2__site
+                        .view-site
+                            ul.view-site__list
+                                li.view-site__item
+                                    img(src="assets/images/works/1.png", alt="work-1").view-site__img
+                    .works-section-2__control
+                        .prev
+                            ul.prev__list
+                                li.prev__item
+                                    img(src="assets/images/works/2.png", alt="").prev__slide
                             .control__prev
                                 svg(width="43" height="27").arrow-portfolio__box-prev
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
+                        .next
+                            ul.next__list
+                                li.next__item
+                                    img(src="assets/images/works/3.png", alt="").next__slide
                             .control__next
                                 svg(width="43" height="27").arrow-portfolio__box-next
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_up").arrow-portfolio__icon-next
