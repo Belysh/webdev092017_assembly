@@ -1,3 +1,65 @@
+// fullscreen________________________________________
+
+.fullscreen--active {
+    display: block !important;
+}
+
+.fullscreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 191, 165, 0.87);
+    z-index: 10;
+}
+
+.nav-footer__list--fullscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+
+}
+
+.nav-footer__item--fullscreen {
+    position: relative;
+}
+
+.fullscreen .nav-footer__link--fullscreen {
+    font-family: BernierRegular;
+    font-size: 63px; 
+    padding: 45px 20px;
+    @include size-768 {
+        font-size: 50px;   
+    }
+    @include size-320 {
+        font-size: 35px;  
+        padding: 25px 20px; 
+    }
+
+}
+
+.fullscreen .nav-footer__item--fullscreen:after, .fullscreen .nav-footer__item--fullscreen:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 22px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 50%;   
+}
+
+.fullscreen .nav-footer__item--fullscreen:before {
+    transform: translate(-120%, 0);
+
+
+}
+
+
+
 // about________________________________________
 
 .about {
@@ -30,9 +92,61 @@
     margin-left: 25px;
 }
 
-.menu-hamb__icon {
-    fill: #fff;
+.menu-hamb {
+    height: 40px;
+    width: 40px;
+    @include size-320 {
+        height: 25px;
+        width: 25px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-hamb--click .menu-humb__line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamb--click .menu-humb__line:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: -12%;    
+    width: 55px;
+    @include size-320 {
+        width: 40px;
+        left: -40%;  
+    }
+}
+
+.menu-hamb--click .menu-humb__line:nth-child(3) {
+    transform: rotate(-45deg) ;
+    position: absolute;
+    top: 50%;
+    left: -12%;    
+    width: 55px;
+    @include size-320 {
+        width: 40px;
+        left: -40%;  
+    }
+}
+
+.menu-humb__line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2.5px;
+    @include size-320 {
+        width: 25px;
+        height: 3px;
+        border-radius: 1.5px;
+    }
+    transition: all 0.5s;
 }
 
 .vk {

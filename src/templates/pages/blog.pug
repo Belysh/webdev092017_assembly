@@ -9,6 +9,17 @@ html
         meta(content="ie=edge" http-equiv="x-ua-compatible")
         link(rel='stylesheet' href='assets/styles/main.min.css')
     body
+        .fullscreen
+            nav.nav-footer.nav-footer--fullscreen
+                ul.nav-footer__list.nav-footer__list--fullscreen
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="works.html").nav-footer__link.nav-footer__link.nav-footer__link--fullscreen Мои работы
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="about.html").nav-footer__link.nav-footer__link--fullscreen Обо мне
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="blog.html").nav-footer__link.nav-footer__link--fullscreen Блог
+                    li.nav-footer__item.nav-footer__item--fullscreen
+                        a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
         .blog
             section.blog-section-1
                 .blog-section-1__header.blog-section-1--container
@@ -28,8 +39,9 @@ html
                                         use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
                     .blog-section-1__right
                         .menu-hamb
-                            svg(width="40" height="35").menu-hamb__box
-                                use(xlink:href="assets/images/sprite.svg#hamburger").menu-hamb__icon
+                            span.menu-humb__line
+                            span.menu-humb__line
+                            span.menu-humb__line
                 .blog-section-1__middle
                     .avatar
                         .avatar__box.avatar__box--blog
