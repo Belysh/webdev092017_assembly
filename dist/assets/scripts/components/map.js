@@ -183,7 +183,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
     }
       ]
   });
-  var markerImg = "../assets/images/map_marker.svg";
+  var markerImg = "assets/images/map_marker.svg";
   var markerLocation = new google.maps.LatLng(48.46375898, 35.02986431);
   var markerContent = "Буду рад Вас видеть";
   var infowindow = new google.maps.InfoWindow();

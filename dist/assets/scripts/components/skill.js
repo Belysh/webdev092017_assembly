@@ -50,19 +50,19 @@ class Skill {
     }
   }
   
-  const html = new Skill(120, 120, '#html', 0.65);
-  const css = new Skill(120, 120, '#css', 0.65);
+  const html = new Skill(130, 130, '#html', 0.65);
+  const css = new Skill(130, 130, '#css', 0.65);
 
-  const js = new Skill(120, 120, '#js', 0.45);
+  const js = new Skill(130, 130, '#js', 0.45);
 
-  const php = new Skill(120, 120, '#php', 0.45);
-  const mySql = new Skill(120, 120, '#mySql', 0.45);
-  const node = new Skill(120, 120, '#node', 0.45);
-  const mongo = new Skill(120, 120, '#mongo', 0.45);
+  const php = new Skill(130, 130, '#php', 0.45);
+  const mySql = new Skill(130, 130, '#mySql', 0.45);
+  const node = new Skill(130, 130, '#node', 0.45);
+  const mongo = new Skill(130, 130, '#mongo', 0.45);
 
-  const git = new Skill(120, 120, '#git', 0.45);
-  const gulp = new Skill(120, 120, '#gulp', 0.45);
-  const bower = new Skill(120, 120, '#bower', 0.45);
+  const git = new Skill(130, 130, '#git', 0.45);
+  const gulp = new Skill(130, 130, '#gulp', 0.45);
+  const bower = new Skill(130, 130, '#bower', 0.45);
   
   anim.onclick = function() {
     html.draw();
