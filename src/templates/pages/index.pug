@@ -17,26 +17,27 @@ body
           a.login__link(href="login.html") Авторизоваться
       .welcome__center
         .main
-          .avatar
-            .avatar__box
-              img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
-            .avatar__title
-              h1.avatar__i Владимир Астахов
-              .avatar__info Личный сайт веб разработчика
-          .main__socials
-            ul.icons
-                li.icons__item
-                    a(href="#" class='icons__link')
-                        svg(width="31" height="17").vk
-                            use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
-                li.icons__item
-                    a(href="#" class='icons__link')
-                        svg(width="26" height="22").github
-                            use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
-                li.icons__item
-                    a(href="#" class='icons__link')
-                        svg(width="24" height="22").in
-                            use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+          .main__box
+            .avatar
+              .avatar__box
+                img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+              .avatar__title
+                h1.avatar__i Владимир Астахов
+                .avatar__info Личный сайт веб разработчика
+            .main__socials
+              ul.icons
+                  li.icons__item
+                      a(href="https://vk.com/id27837868" class='icons__link' target="_blank")
+                          svg(width="31" height="17").vk
+                              use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                  li.icons__item
+                      a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
+                          svg(width="26" height="22").github
+                              use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                  li.icons__item
+                      a(href="https://www.linkedin.com" class='icons__link' target="_blank")
+                          svg(width="24" height="22").in
+                              use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
           nav.nav
             ul.nav__list
               li.nav__item

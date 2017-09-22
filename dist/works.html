@@ -21,7 +21,7 @@
 			</nav>
 		</div>
 		<div class="works">
-			<section class="section works__section-1">
+			<section class="section works__section-1" id="prevSection">
 				<div class="section-1-header">
 					<div class="section-1-header__left">
 						<ul class="icons">
@@ -50,18 +50,13 @@
 							<h1 class="avatar__i">Владимир Астахов</h1>
 							<div class="avatar__info avatar__info--white">Личный сайт веб разработчика</div>
 						</div>
-						<div class="about-section-1__container-svg">
-							<svg class="svg-bg" viewBox="0 0 1175.495 313.961">
-								<use class="svg-bg__img" xlink:href="assets/images/sprite.svg#portfolio_header"></use>
-							</svg>
-						</div>
+						<div class="about-section-1__container-svg"><img class="about-section-1__svg-img" src="assets/images/portfolio_header.svg" alt="svg__bg"></div>
 					</div>
 				</div>
-				<div class="section-1-header__bottom works__bottom">
-					<svg class="arrow arrow--toDown" width="26" height="16">
-						<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
-					</svg>
-				</div>
+				<div class="section-1-header__bottom works__bottom"><a class="arrow arrow--toDown" href="#toNext">
+						<svg width="26" height="16">
+							<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
+						</svg></a></div>
 				<div class="section-1-header-triangle">
 					<div class="triangle-box">
 						<svg class="traingle-box__item" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 900 180" preserveaspectratio="none">
@@ -73,7 +68,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="works-section-2">
+			<section class="works-section-2" id="toNext">
 				<div class="works-section-2__top">
 					<h1 class="title title--big works__title">Мои работы
 						<div class="works-section-1__container-svg">
@@ -107,7 +102,7 @@
 						<div class="prev">
 							<ul class="prev__list">
 								<li class="prev__item">
-									<div class="prev__box"><img class="prev__slide" src="assets/images/works/2.png" alt=""></div>
+									<div class="prev__box"><img class="prev__slide" src="assets/images/works/2.png" alt="work-2"></div>
 								</li>
 							</ul>
 							<div class="control__prev">
@@ -119,7 +114,7 @@
 						<div class="next">
 							<ul class="next__list">
 								<li class="next__item">
-									<div class="next__box"><img class="next__slide" src="assets/images/works/3.png" alt=""></div>
+									<div class="next__box"><img class="next__slide" src="assets/images/works/3.png" alt="work-3"></div>
 								</li>
 							</ul>
 							<div class="control__next">
@@ -132,7 +127,7 @@
 				</div>
 			</section>
 			<section class="works-section-3 blur">
-				<div class="blur__back"><img class="blur__image" src="assets/images/bg_works.jpg"></div>
+				<div class="blur__back"><img class="blur__image" src="assets/images/bg_works.jpg" alt="blur"></div>
 				<div class="works-section-3__title">
 					<div class="title-box">
 						<h1 class="title title--big title--twoLine">Что обо мне говорят
@@ -150,7 +145,7 @@
 							<div class="note__icon-box"><i class="fa fa-quote-left note__icon"></i></div>
 							<div class="note__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
 							<div class="note__author">
-								<div class="note__img"><img class="note__ava-1" src="assets/images/dima.jpg" alt=""></div>
+								<div class="note__img"><img class="note__ava-1" src="assets/images/dima.jpg" alt="author_1"></div>
 								<div class="note__who">
 									<div class="note__author-name">Ковальчук Дмитрий</div>
 									<div class="note__author-prof">основатель LoftSchool</div>
@@ -163,7 +158,7 @@
 							<div class="note__icon-box"><i class="fa fa-quote-left note__icon"></i></div>
 							<div class="note__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
 							<div class="note__author">
-								<div class="note__img"><img class="note__ava" src="assets/images/vova.jpg" alt=""></div>
+								<div class="note__img"><img class="note__ava" src="assets/images/vova.jpg" alt="author_2"></div>
 								<div class="note__who">
 									<div class="note__author-name">Владимир Сабанцев</div>
 									<div class="note__author-prof">преподаватель</div>
@@ -186,7 +181,7 @@
 									<input class="form__input conect__name" type="text" placeholder="Имя">
 								</div>
 								<div class="conect__input-box">
-									<input class="form__input conect__mail" type="mail" placeholder="E-mail">
+									<input class="form__input conect__mail" type="email" placeholder="E-mail">
 								</div>
 								<div class="conect__input-box">
 									<textarea class="form__input conect__message" name="massage_from_user" placeholder="Ваше сообщение"></textarea>
@@ -205,11 +200,10 @@
 						</form>
 					</div>
 				</div>
-				<div class="works-section-3__arrow">
-					<svg class="arrow arrow--toUp" width="26" height="16">
-						<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
-					</svg>
-				</div>
+				<div class="works-section-3__arrow"><a class="arrow arrow--toUp" href="#prevSection">
+						<svg width="26" height="16">
+							<use class="arrow__icon" xlink:href="assets/images/sprite.svg#arrow_down"></use>
+						</svg></a></div>
 				<section class="works__section-4">
 					<div class="footer">
 						<div class="footer__top">
@@ -225,17 +219,17 @@
 							</div>
 							<div class="footer__socials">
 								<ul class="socials-footer">
-									<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+									<li class="socials-footer__item"><a class="socials-footer__link" href="https://vk.com/id27837868" target="_blank"> 
 											<svg class="socials-footer__box" width="36" height="36">
 												<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#vk_round"></use>
 												<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#vk_round"></use>
 											</svg></a></li>
-									<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+									<li class="socials-footer__item"><a class="socials-footer__link" href="https://github.com/Red02Raccoon" target="_blank"> 
 											<svg class="socials-footer__box" width="36" height="36">
 												<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#github_round"></use>
 												<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#github_round"></use>
 											</svg></a></li>
-									<li class="socials-footer__item"><a class="socials-footer__link" href="#"> 
+									<li class="socials-footer__item"><a class="socials-footer__link" href="https://www.linkedin.com" target="_blank"> 
 											<svg class="socials-footer__box" width="36" height="36">
 												<use class="socials-footer__icon" xlink:href="assets/images/sprite.svg#in_round"></use>
 												<use class="socials-footer__icon--hover" xlink:href="assets/images/sprite.svg#in_round"></use>

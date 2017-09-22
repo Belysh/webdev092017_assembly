@@ -21,7 +21,7 @@ html
                     li.nav-footer__item.nav-footer__item--fullscreen
                         a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
         .works
-            section.section.works__section-1
+            section.section.works__section-1(id='prevSection')
                 .section-1-header
                     .section-1-header__left
                         ul.icons
@@ -50,18 +50,18 @@ html
                             h1.avatar__i Владимир Астахов
                             .avatar__info.avatar__info--white Личный сайт веб разработчика
                         .about-section-1__container-svg
-                            svg(viewBox="0 0 1175.495 313.961").svg-bg
-                                use(xlink:href="assets/images/sprite.svg#portfolio_header").svg-bg__img
+                            img(src="assets/images/portfolio_header.svg", alt="svg__bg").about-section-1__svg-img
                 .section-1-header__bottom.works__bottom
-                    svg(width="26" height="16").arrow.arrow--toDown
-                        use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                    a(href="#toNext").arrow.arrow--toDown
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
                 .section-1-header-triangle
                     .triangle-box
                         svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
                             polygon.traingle-box__left(points='0,0   0,180   900,180   0,0')
                         svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
                             polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
-            section.works-section-2
+            section.works-section-2(id="toNext")
                 .works-section-2__top
                     h1.title.title--big.works__title Мои работы
                         .works-section-1__container-svg
@@ -88,7 +88,7 @@ html
                             ul.prev__list
                                 li.prev__item
                                     .prev__box
-                                        img(src="assets/images/works/2.png", alt="").prev__slide
+                                        img(src="assets/images/works/2.png", alt="work-2").prev__slide
                             .control__prev
                                 svg(width="43" height="27").arrow-portfolio__box-prev
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
@@ -96,13 +96,13 @@ html
                             ul.next__list
                                 li.next__item
                                     .next__box
-                                        img(src="assets/images/works/3.png", alt="").next__slide
+                                        img(src="assets/images/works/3.png", alt="work-3").next__slide
                             .control__next
                                 svg(width="43" height="27").arrow-portfolio__box-next
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_up").arrow-portfolio__icon-next
             section.works-section-3.blur
                 .blur__back
-                    img.blur__image(src="assets/images/bg_works.jpg")
+                    img.blur__image(src="assets/images/bg_works.jpg" alt="blur")
                 .works-section-3__title
                     .title-box
                         h1.title.title--big.title--twoLine Что обо мне говорят
@@ -117,7 +117,7 @@ html
                             .note__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                             .note__author
                                 .note__img
-                                    img.note__ava-1(src="assets/images/dima.jpg", alt="")
+                                    img.note__ava-1(src="assets/images/dima.jpg", alt="author_1")
                                 .note__who
                                     .note__author-name Ковальчук Дмитрий
                                     .note__author-prof основатель LoftSchool
@@ -128,7 +128,7 @@ html
                             .note__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
                             .note__author
                                 .note__img
-                                    img.note__ava(src="assets/images/vova.jpg", alt="")
+                                    img.note__ava(src="assets/images/vova.jpg", alt="author_2")
                                 .note__who
                                     .note__author-name Владимир Сабанцев
                                     .note__author-prof преподаватель
@@ -143,7 +143,7 @@ html
                                 .conect__input-box
                                     input(type="text" placeholder="Имя").form__input.conect__name
                                 .conect__input-box
-                                    input(type="mail" placeholder="E-mail").form__input.conect__mail
+                                    input(type="email" placeholder="E-mail").form__input.conect__mail
                                 .conect__input-box
                                     textarea(name="massage_from_user" placeholder="Ваше сообщение" ).form__input.conect__message
                                 .conect__button
@@ -153,8 +153,9 @@ html
                                         li.conect__item
                                             button(type="reset").conect__link Очистить
                 .works-section-3__arrow
-                    svg(width="26" height="16").arrow.arrow--toUp
-                        use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
+                    a(href="#prevSection").arrow.arrow--toUp
+                        svg(width="26" height="16")
+                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
                 section.works__section-4
                     .footer
                         .footer__top
@@ -172,17 +173,17 @@ html
                             .footer__socials
                                 ul.socials-footer
                                     li.socials-footer__item
-                                        a(href="#").socials-footer__link 
+                                        a(href="https://vk.com/id27837868" target="_blank").socials-footer__link 
                                             svg(width="36" height="36").socials-footer__box
                                                 use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon
                                                 use(xlink:href="assets/images/sprite.svg#vk_round").socials-footer__icon--hover
                                     li.socials-footer__item
-                                        a(href="#").socials-footer__link 
+                                        a(href="https://github.com/Red02Raccoon" target="_blank").socials-footer__link 
                                             svg(width="36" height="36").socials-footer__box
                                                 use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon
                                                 use(xlink:href="assets/images/sprite.svg#github_round").socials-footer__icon--hover
                                     li.socials-footer__item
-                                        a(href="#").socials-footer__link 
+                                        a(href="https://www.linkedin.com" target="_blank").socials-footer__link 
                                             svg(width="36" height="36").socials-footer__box
                                                 use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon
                                                 use(xlink:href="assets/images/sprite.svg#in_round").socials-footer__icon--hover
