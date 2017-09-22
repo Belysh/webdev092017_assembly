@@ -1,8 +1,6 @@
 // fullscreen________________________________________
 
-.fullscreen--active {
-    display: block !important;
-}
+
 
 .fullscreen {
     display: none;
@@ -13,6 +11,10 @@
     left: 0;
     background-color: rgba(0, 191, 165, 0.87);
     z-index: 10;
+}
+
+.fullscreen--active {
+    display: block !important;
 }
 
 .nav-footer__list--fullscreen {
@@ -246,6 +248,18 @@
     }
 }
 
+.arrow {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .arrow__icon {
     fill: #beced5;
     width: 26px;
@@ -253,11 +267,11 @@
     cursor: pointer;
 }
 
-.arrow:hover .arrow__down {
+.arrow:hover .arrow__icon {
     fill: #fff;
-    transform-origin: 50% 50%;
-    transition: all 0.5;
 }
+
+
 
 // triangle__________________________
 .section-1-header-triangle {
@@ -271,12 +285,11 @@
 }
 .triangle-box {
     display: flex;
-
 }
+
 
 .traingle-box__item {
     width: 50%;
-
 }
 
 .about .traingle-box__right {
@@ -290,6 +303,7 @@
 
 // section-2__________________________________________
 .about-section-2 {
+    height: 100vh;
     display: flex;
     justify-content: center;
     position: relative;

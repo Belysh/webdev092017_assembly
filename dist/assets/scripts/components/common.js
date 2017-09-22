@@ -11,7 +11,13 @@ function size(){
 $(window).on('load resize', size);
 
 //show fullScreen
-$(".menu-hamb").on("click", function(){
-    $(this).toggleClass("menu-hamb--click");
-    $(".fullscreen").toggleClass("fullscreen--active");
-})
+
+    $(".menu-hamb").on("click", function(){
+        $(this).toggleClass("menu-hamb--click");
+        if ($(".fullscreen").is(":hidden")) {
+      $(".fullscreen").slideDown("slow");
+    } else {
+      $(".fullscreen").hide("slow");
+    }
+});
+
