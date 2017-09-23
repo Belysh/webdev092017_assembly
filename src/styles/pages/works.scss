@@ -53,7 +53,7 @@
     @include size-768 {
         min-height: 135px;
     }
-    @include size-320 {
+    @include size-645 {
         min-height: 95px;
     }  
 }
@@ -63,7 +63,7 @@
     @include size-768 {
         width: 380px;
     }  
-    @include size-320 {
+    @include size-645 {
         width: 165px;
     }  
     text-align: center;
@@ -120,7 +120,7 @@
         min-height: auto;
         padding: 45px 0 60px;
     } 
-    @include size-320 {
+    @include size-645 {
         padding: 35px 12px;
     } 
 }
@@ -233,7 +233,7 @@ align-items: center;
     border-top: 1px solid #acd6ce;
     border-bottom: 1px solid #acd6ce;
     color: #20b5a1;
-    @include size-320 {
+    @include size-645 {
         padding: 10px 0;
         display: block;
     }
@@ -246,7 +246,7 @@ align-items: center;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    @include size-320 {
+    @include size-645 {
         padding: 12px 13px;
         font-size: 14px;
     }
@@ -276,7 +276,7 @@ align-items: center;
         padding-top:50px;
         padding-bottom: 50px;
     }
-    @include size-320 {
+    @include size-645 {
         padding-top:38px;
         padding-bottom: 30px;
     }
@@ -301,7 +301,7 @@ align-items: center;
     padding-top: 32.22%;
     position: absolute;
     top: 30%;
-    @include size-320 {
+    @include size-645 {
         width: 270px;
     }
     left: 50%;
@@ -320,7 +320,7 @@ align-items: center;
         padding-right: 25px;
         padding-bottom: 30px;
     }
-    @include size-320 {
+    @include size-645 {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -333,7 +333,7 @@ align-items: center;
         line-height: 1;
         width: 380px;
     }  
-    @include size-320 {
+    @include size-645 {
         font-size: 35px;
         width: 152px;
     }
@@ -353,14 +353,14 @@ align-items: center;
 
 .works-section-3__left {
     margin-right: 10px;
-    @include size-320 {
+    @include size-645 {
         margin-right: 0;
      }
 }
 
 .works-section-3__right {
     margin-left: 10px;
-    @include size-320 {
+    @include size-645 {
         margin-left: 0;
     }   
 }
@@ -370,7 +370,7 @@ align-items: center;
     @include size-768 {
        margin-bottom: 20px;
     }
-    @include size-320 {
+    @include size-645 {
         text-align: center;
      }
 }
@@ -403,7 +403,7 @@ align-items: center;
         line-height: 24px;
         margin-bottom: 20px;
     }
-    @include size-320 {
+    @include size-645 {
         margin-bottom: 30px;
     }
 }
@@ -411,7 +411,7 @@ align-items: center;
 .note__img {
     height:80px;
     width: 80px;
-    @include size-320 {
+    @include size-645 {
         height:50px;
         width: 50px;
     }
@@ -437,7 +437,7 @@ align-items: center;
 }
 
 .works-section-3__right .note__author {
-    @include size-320 {
+    @include size-645 {
         margin-bottom: 0;
     }   
 }
@@ -449,7 +449,7 @@ align-items: center;
 
 .conect {
     flex-basis: 380px;
-    @include size-320 {
+    @include size-645 {
         flex-basis: 300px;
     }
     position: relative;
@@ -550,7 +550,7 @@ bottom: 0;
     color: #373e42;
     padding: 0 20px 0;
     width: 340px;
-    @include size-320 {
+    @include size-645 {
         width: 260px;
     }
 }
@@ -589,7 +589,7 @@ bottom: 0;
     color: #fff;
     display: block;
     padding: 15px 0;
-    @include size-320 {
+    @include size-645 {
         font-size: 14px;
     }
     width: 100%;
@@ -612,7 +612,7 @@ bottom: 0;
     @include size-768 {
         margin: 100px auto 55px;
     }
-    @include size-320 {
+    @include size-645 {
         margin: 55px auto 38px;
     }
 }
