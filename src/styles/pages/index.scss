@@ -56,10 +56,12 @@
 
 // центральный блок
 .welcome__center {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    // position: absolute;
+    // top: 50%;
+    // right: 50%;
+    // transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -187,5 +189,45 @@ margin-top: 38px;
     @include size-645 {
         font-size: 14px;
     }
+}
+
+
+// flipping_________________________
+.hidden {
+    display: none;
+}
+
+.box-effect {
+    position: relative;
+    max-width: 380px;
+    max-height: 500px;
+}
+
+.box-effect__front,
+.box-effect__back {
+
+}
+
+.box-effect__front,
+.box-effect__back {
+backface-visibility: hidden;
+transition: transform 0.6s;
+}
+
+
+.box-effect__back {
+    transform: rotateY(-180deg);
+    position: absolute;
+    top: 0;
+    }
+
+
+// flipping__for click
+.box-effect.effect__click.flipped .box-effect__front {
+transform: rotateY(-180deg);
+}
+
+.box-effect.effect__click.flipped .box-effect__back {
+transform: rotateY(0);
 }
 
