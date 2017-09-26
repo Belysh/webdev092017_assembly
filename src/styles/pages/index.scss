@@ -1,7 +1,61 @@
+// for parallax_________
+
+.parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/parallax/layer_1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+}
+
+.parallax__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 105%;
+    transform: translateX(-50%);
+}
+
+.parallax__img--sky-1 {
+    top: 11%;
+    left: 77%;
+    width: 20%;
+}
+
+.parallax__img--sky-2 {
+    bottom: 55%;
+    left: 40%;
+    width: 20%;   
+}
+
+.parallax__img--sky-3 {
+    left: 32%;
+    width: 80%; 
+}
+
+//______________________________
 .welcome {
-    width: 100;
+
+    width: 100%;
     height: 100%;
 }
+
 .section {
     min-height: 100vh;
     position: relative;
@@ -16,8 +70,10 @@
     background-attachment: fixed;
 }
 
-
-// верхний блок
+.section__welcome {
+    background: transparent;
+}
+// верхний блок______________
 .welcome__top {
     display: flex;
     justify-content: flex-end;

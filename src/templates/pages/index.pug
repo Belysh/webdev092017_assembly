@@ -11,7 +11,26 @@ html
 
 body
   .welcome
-    section.section
+    #parallax.parallax
+        .parallax__layer
+            img(src="assets/images/parallax/layer_2.png", alt="bg_parallax").parallax__img
+        .parallax__layer
+            img(src="assets/images/parallax/layer_3.png", alt="bg_parallax").parallax__img
+        .parallax__layer
+            img(src="assets/images/parallax/layer_5.png", alt="bg_parallax").parallax__img
+        .parallax__layer
+            img(src="assets/images/parallax/layer_6.png", alt="bg_parallax").parallax__img
+        .parallax__layer
+            img(src="assets/images/parallax/layer_8.png", alt="bg_parallax").parallax__img
+        .parallax__layer
+            img(src="assets/images/parallax/layer_9.png", alt="bg_parallax").parallax__img 
+        .parallax__layer
+            img(src="assets/images/parallax/layer_4.png", alt="bg_parallax").parallax__img.parallax__img--sky-1
+        .parallax__layer
+            img(src="assets/images/parallax/layer_7.png", alt="bg_parallax").parallax__img.parallax__img--sky-2
+        .parallax__layer
+            img(src="assets/images/parallax/layer_10.png", alt="bg_parallax").parallax__img.parallax__img--sky-3
+    section.section.section__welcome
       .welcome__top
         .login
           a.login__link.changeBox(href="#") Авторизоваться
@@ -84,6 +103,7 @@ body
       .welcome__bottom
         .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
   script(src='assets/scripts/components/flip.js')
+  script(src='assets/scripts/components/parallax.js')
 
 
 

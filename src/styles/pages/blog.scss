@@ -102,57 +102,30 @@
 // section-2_____________________________________
 .blog-section-2 {
     background-color: #fff;
+    padding: 70px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    @include size-768 {
+        padding: 70px 0 0;
+    }
+    @include size-320 {
+        padding-top: 38px;
+    } 
 }
 
-.blog-section-2__content {
-    display: flex;
-    justify-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    @include size-1200 {
-        padding-right: 7.5%;
-    }
-    @include size-768 {
-        padding-right: 0;
-    }
-}
 
 .blog-section-2__left {
-    margin-right: -15%;
+    width: 25%;
     text-align: right;
-    padding-top: 70px;
-    padding-left: 125px;
-    position: absolute;
-    right: 100%;
-    width: 30%; 
-    @include size-1320 {
-        width: 27%;
-        margin-right: -17%; 
-    }
-    @include size-1200 {
-        width: 25.9%;
-            margin-right: 0; 
-    text-align: right;
-    padding-top: 70px;
-    padding-left: 0;
-    position: absolute;
-    right: 70%;
-    }
     @include size-768 {
         display: none;
     }
 }
 
 .blog-section-2__center {
-    width: 80%;
-    padding-top: 70px;
-    @include size-320 {
-        padding-top: 38px;
-    }   
+    width: 65%;
     padding-right: 10px;
     @include size-1200 {
-        width: 58.33%;
         padding-right: 20px;
     }
     @include size-768 {
@@ -170,21 +143,38 @@
     display: none;
 }
 
+.wrapper {
+  position: relative;
+  top: 0;
+}
+
+.wrapper.fixed {
+  left: 0;
+  width: 30%;
+  padding: 20px 40px 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
 .article-list__link {
+    border-right: 3px solid transparent;
     font-family: RobotoRegular;
     font-size: 16px;
     padding: 15px 18px 15px 0;
     display: inline-block;
 }
 
-.article-list__link--active, .article-list__link:hover {
-    font-family: RobotoBold;
+.article-list__item--active {
     color: #00bfa5;
     border-right: 3px solid #00bfa5;
 }
 
-
-
+.article-list__item--active .article-list__link {
+    color: #00bfa5;
+}
 
 .article {
     padding-bottom: 70px;

@@ -5,7 +5,6 @@
 
 
         var btn = document.querySelectorAll(".changeBox");
-        console.log(btn);
 
         btn.forEach(function(item){
             item.addEventListener( "click", function(e) {
@@ -14,7 +13,7 @@
                 var c = box.classList;
                 c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
     
-                this.classList.add("hidden");
+                this.classList.toggle("hidden");
             })
         })
 
