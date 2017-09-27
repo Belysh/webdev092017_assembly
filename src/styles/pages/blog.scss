@@ -21,6 +21,7 @@
 
 
 .blog-section-1--container {
+    position: absolute;
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -33,7 +34,7 @@
     }   
 }
 
-.blog-section-1 .traingle-box__left, .traingle-box__right {
+.blog .traingle-box__left, .traingle-box__right {
     fill: #fff !important;
 }
 
@@ -43,12 +44,11 @@
     color: #fff;
 }
 
-.blog-section-1__middle {
-    padding-bottom: 70px;
-    @include size-768 {
-        padding-bottom: 90px;
-    }
+.about-section-1__container-svg--blog {
+    top: 40%;
 }
+
+
 
 .avatar__blog {
     color: #fff;

@@ -21,7 +21,8 @@
 			</nav>
 		</div>
 		<div class="blog">
-			<section class="blog-section-1">
+			<section class="about__section-parallax">
+				<div class="section-1-bg-box"><img class="section-1-bg-box__img" src="assets/images/bg_welcome.png" alt="bg_welcome"></div>
 				<div class="blog-section-1__header blog-section-1--container">
 					<div class="blog-section-1__left">
 						<ul class="icons">
@@ -43,17 +44,12 @@
 						<div class="menu-hamb"><span class="menu-humb__line"></span><span class="menu-humb__line"></span><span class="menu-humb__line"></span></div>
 					</div>
 				</div>
-				<div class="blog-section-1__middle">
-					<div class="avatar">
-						<div class="avatar__box avatar__box--blog"><img class="avatar__img" src="assets/images/ava.png" alt="avatar"></div>
-						<div class="avatar__title avatar__blog">
-							<h1 class="title title--big-white title--blog">Блог
-								<svg class="svg-bg svg-bg__blog" width="303" height="208">
-									<use class="svg-bg__img svg-bg__img-blog" xlink:href="assets/images/sprite.svg#blog_header"></use>
-								</svg>
-							</h1>
-							<div class="avatar__info avatar__info--blog">Статьи, которые я написал</div>
-						</div>
+				<div class="about-section-1__container-svg about-section-1__container-svg--blog"><img class="about-section-1__svg-img" src="assets/images/blog_header.svg" alt="svg__bg"></div>
+				<div class="avatar avatar--parallax">
+					<div class="avatar__box avatar__box--blog"><img class="avatar__img" src="assets/images/ava.png" alt="avatar"></div>
+					<div class="avatar__title avatar__blog">
+						<h1 class="title title--big-white title--blog">Блог</h1>
+						<div class="avatar__info avatar__info--blog">Статьи, которые я написал</div>
 					</div>
 				</div>
 				<div class="blog-section-1__bottom"><a class="arrow arrow--toDown" href="#toDown">
@@ -164,6 +160,7 @@
 		</div>
 		<script src="assets/scripts/components/jquery-3.2.1.min.js"></script>
 		<script src="assets/scripts/components/common.js"></script>
+		<script src="assets/scripts/components/parallax-scroll.js"></script>
 		<script src="assets/scripts/components/fixed-menu.js"></script>
 	</body>
 </html>

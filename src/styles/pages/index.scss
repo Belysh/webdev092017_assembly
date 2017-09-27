@@ -133,6 +133,12 @@
     border-radius: 5px 5px 5px 5px;
 }
 
+.avatar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .avatar__box {
     margin: 40px auto 20px;
     width: 147px;

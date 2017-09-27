@@ -21,7 +21,9 @@ html
                     li.nav-footer__item.nav-footer__item--fullscreen
                         a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
         .about
-            section.section.about__section-1
+            section.about__section-parallax
+                .section-1-bg-box
+                    img(src="assets/images/bg_welcome.png", alt="bg_welcome").section-1-bg-box__img
                 .section-1-header
                     .section-1-header__left
                         ul.icons
@@ -42,15 +44,14 @@ html
                             span.menu-humb__line
                             span.menu-humb__line
                             span.menu-humb__line
-                .section-1-header__middle
-                    .avatar
-                        .avatar__box
-                            img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
-                        .avatar__title.avatar__title--white
-                            h1.avatar__i Владимир Астахов
-                            .avatar__info.avatar__info--white Личный сайт веб разработчика
-                        .about-section-1__container-svg
-                            img(src="assets/images/portfolio_header.svg", alt="svg__bg").about-section-1__svg-img
+                .about-section-1__container-svg
+                    img(src="assets/images/portfolio_header.svg", alt="svg__bg").about-section-1__svg-img
+                .avatar.avatar--parallax
+                    .avatar__box
+                        img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                    .avatar__title.avatar__title--white
+                        h1.avatar__i Владимир Астахов
+                        .avatar__info.avatar__info--white Личный сайт веб разработчика       
                 .section-1-header__bottom
                     a(href="#nextSection").arrow.arrow--toDown
                         svg(width="26" height="16")
@@ -193,6 +194,7 @@ html
         script(src="assets/scripts/components/jquery-3.2.1.min.js")
         script(src='assets/scripts/components/snap.svg-min.js')
         script(src='assets/scripts/components/skill.js')
+        script(src='assets/scripts/components/parallax-scroll.js')
         script(src='assets/scripts/components/common.js')
 
 
