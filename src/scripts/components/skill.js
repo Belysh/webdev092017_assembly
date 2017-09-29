@@ -36,20 +36,20 @@ class Skill {
     }
   
     draw() {
-      Snap.animate(
-        this.length,
-        (1 - this.percent) * this.length,
-        val => {
-          this.baseCircle.attr({
-            strokeDashoffset: val
-          });
-        },
-        700,
-        mina.easeinout
-      );
-    }
-  }
-  
+        Snap.animate(
+          this.length,
+          (1 - this.percent) * this.length,
+          val => {
+            this.baseCircle.attr({
+              strokeDashoffset: val
+            });
+          },
+          700,
+          mina.easeinout
+        )
+      }
+  };
+
   const html = new Skill(130, 130, '#html', 0.65);
   const css = new Skill(130, 130, '#css', 0.65);
 
@@ -63,16 +63,18 @@ class Skill {
   const git = new Skill(130, 130, '#git', 0.45);
   const gulp = new Skill(130, 130, '#gulp', 0.45);
   const bower = new Skill(130, 130, '#bower', 0.45);
-  
-  anim.onclick = function() {
-    html.draw();
-    css.draw();
-    js.draw();
-    php.draw();
-    mySql.draw();
-    node.draw();
-    mongo.draw();
-    git.draw();
-    gulp.draw();
-    bower.draw();
-  };
+
+
+
+  window.addEventListener("scroll", function() {
+    var wScroll = window.pageYOffset;
+    var a = html.strokeDashoffset;
+    console.log(a);
+    const sectionHeight = document.querySelector(".about__section-parallax").offsetHeight;
+    if ((wScroll > sectionHeight / 3) && (a > 271)) {
+      html.draw()
+    }
+  })
+
+
+

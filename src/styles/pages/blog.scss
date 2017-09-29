@@ -22,6 +22,8 @@
 
 .blog-section-1--container {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     max-width: 1200px;
     width: 100%;
     display: flex;

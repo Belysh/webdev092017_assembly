@@ -76,6 +76,7 @@
 // верхний блок______________
 .welcome__top {
     display: flex;
+    min-height: 85px;
     justify-content: flex-end;
     padding-top: 25px;
     padding-right: 100px;
@@ -169,8 +170,8 @@
 
 // социалки
 .main__socials {
-margin-bottom: 40px;
-margin-top: 38px;
+margin-bottom: 43px;
+margin-top: 40px;
 }
 
 .icons {

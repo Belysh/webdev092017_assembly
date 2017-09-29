@@ -443,6 +443,11 @@ align-items: center;
 }
 
 .works-section-3__main {
+    width: 380px;
+    @include size-645 {
+        width: 300px;
+    }
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -456,8 +461,6 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center top;
     overflow: hidden;
 }
 
@@ -473,7 +476,7 @@ align-items: center;
     bottom: 0;
     left: 0;
     margin: 0 auto;
-    min-width: 2000px;
+    min-width: 1800px;
 }
 
 .blur__image {
@@ -498,10 +501,9 @@ bottom: 0;
 .blur-form__img {
     background-image: url("..//images/bg_works.jpg");
     width: 100%;
-    height: auto;
-    background-position: center center;
+    height: 100%;
     background-repeat: no-repeat;
-    filter: blur(30px);
+    filter: blur(20px);
     position: absolute;
     left: 0;
     right: 0;
