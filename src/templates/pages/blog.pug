@@ -19,7 +19,7 @@ html
                     li.nav-footer__item.nav-footer__item--fullscreen
                         a(href="blog.html").nav-footer__link.nav-footer__link--fullscreen Блог
                     li.nav-footer__item.nav-footer__item--fullscreen
-                        a(href="login.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
+                        a(href="index.html").nav-footer__link.nav-footer__link--fullscreen Авторизация
         .blog
             section.about__section-parallax
                 .section-1-bg-box
@@ -52,10 +52,6 @@ html
                     .avatar__title.avatar__blog
                         h1.title.title--big-white.title--blog Блог
                         .avatar__info.avatar__info--blog Статьи, которые я написал
-                .blog-section-1__bottom
-                    a(href="#toDown").arrow.arrow--toDown
-                        svg(width="26" height="16")
-                            use(xlink:href="assets/images/sprite.svg#arrow_down").arrow__icon
                 .section-1-header-triangle
                     .triangle-box
                         svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
@@ -63,16 +59,17 @@ html
                         svg.traingle-box__item(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 900 180', preserveaspectratio='none')
                             polygon.traingle-box__right(points='0,180   900,180   900,0   0,180')
             section.blog-section-2(id="toDown")
+                .trigger-mobilemenu.fixed_2
                 aside.blog-section-2__left
                     .wrapper
                         ul.article-list
-                            li.article-list__item(data-item="Самое важное в SASS")
+                            li.article-list__item
                                 a(href="#").article-list__link  Самое важное в SASS
-                            li.article-list__item(data-item="Приёмы в вёрстке, без которых не обходится ни один сайт")
+                            li.article-list__item
                                 a(href="#").article-list__link Приёмы в вёрстке, без которых не обходится ни один сайт
-                            li.article-list__item(data-item=" Самый необходимый набор Gulp плагинов")
+                            li.article-list__item
                                 a(href="#").article-list__link Самый необходимый набор Gulp плагинов
-                            li.article-list__item(data-item="Почему я выбрал Jade")
+                            li.article-list__item
                                 a(href="#").article-list__link Почему я выбрал Jade
                 .blog-section-2__center
                     article.article
@@ -142,4 +139,5 @@ html
         script(src='assets/scripts/components/common.js')
         script(src='assets/scripts/components/parallax-scroll.js')
         script(src='assets/scripts/components/fixed-menu.js')
+        script(src='assets/scripts/components/mobilemenu.js')
                     

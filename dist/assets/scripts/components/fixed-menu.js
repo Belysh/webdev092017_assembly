@@ -45,7 +45,6 @@ let scrollMenu = (function() {
       let $element = $(e.target).parent();
       let index = $element.index();
       let sectionOffset = positionArticle[index].top;
-      console.log(sectionOffset);
   
       $(document).off('scroll', _scrollPage);
       $element.siblings().removeClass('article-list__item--active');
