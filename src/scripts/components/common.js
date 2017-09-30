@@ -21,3 +21,24 @@ $(window).on('load resize', size);
     }
 });
 
+//toTop, toDown
+function a(heightScroll) {
+    $('body,html').animate({
+        scrollTop: heightScroll
+        }, 800);
+        return false;      
+}
+
+$(".arrow--toDown").click(function(e) {
+    e.preventDefault();
+    var heightScroll = $(this).closest("section").innerHeight();
+    a(heightScroll);
+});
+
+$(".arrow--toUp").click(function(e) {
+    e.preventDefault();
+    var heightScroll = 0;
+    a(heightScroll);
+});
+
+

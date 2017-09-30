@@ -10,7 +10,6 @@ var blur = (function(){
        var blurStyle = blurImg.style;
 
             blurStyle.backgroundSize = imgWidth + "px" + " auto";
-            console.log(posLeft);
             blurStyle.backgroundPosition = posLeft + "px" + " " + posTop + "px";
      }
   }
