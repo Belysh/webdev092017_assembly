@@ -28,7 +28,7 @@
     min-width: 380px;
     background-color: rgba(252, 252, 252, 0.8);
     border-radius: 5px 5px 5px 5px;
-    @include size-320 {
+    @include size-645 {
         min-width: 300px;
     }
 }
@@ -36,6 +36,10 @@
 .enter__title {
     margin-bottom: 40px;
     margin-top: 35px;
+}
+
+.enter .enter__title .enter__text.title:before {
+    top: 50%;
 }
 
 .title {
