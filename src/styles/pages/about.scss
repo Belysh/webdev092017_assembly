@@ -504,7 +504,7 @@
 }
 
 .about-section-2__title--small .title:after, .title:before {
-    top: 25%;
+    top: 0.5em;
     @include size-320 {
         top: 50%;
     }

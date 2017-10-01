@@ -68,28 +68,35 @@ html
                         .works-section-1__container-svg
                             svg(viewBox='0 0 505.101 165.036').svg-bg.svg-bg__works
                                 use(xlink:href="assets/images/sprite.svg#works_header").svg-bg__img.svg-bg__img-works
-                .works-section-2__content
+                .works-section-2__content.slider
                     .works-section-2__left
-                        h1.title.title--twoLine Сайт школы онлайн образования
+                        .title-box
+                            h1.title.title--twoLine.subtitle Сайт школы онлайн образования
                         .section-2__tech
                             .tech Html, Css, Javascript
                         .section-2__button
                             .button
-                                a.button__link(href='#')
-                                    svg(width="20" height="19").link__box-svg
-                                        use.link__icon(xlink:href='assets/images/sprite.svg#link')
-                                    | 		Посмотреть сайт
+                                a.button__link(href='#' target="_blank")
+                                    i.fa.works__content-view-icon.fa-link.link__icon
+                                    | Посмотреть сайт
                     .works-section-2__site
                         .view-site
-                            ul.view-site__list
-                                li.view-site__item
-                                    img(src="assets/images/works/1.png", alt="work-1").view-site__img
+                            img(src="assets/images/works/1.png", alt="work-1").view-site__img
                     .works-section-2__control
                         .prev
                             ul.prev__list
-                                li.prev__item
+                                li.prev__item(data-full='assets/images/works/1.png', data-title='Агентсво интернет решений "ITLoft"', data-skills='node', data-link='http://itloft.ru/')
                                     .prev__box
-                                        img(src="assets/images/works/2.png", alt="work-2").prev__slide
+                                        img.prev__slide(src='assets/images/works/1.png')
+                                li.prev__item(data-full='assets/images/works/2.png', data-title='Школа онлай-образования "LoftSchool"', data-skills='html5, CSS3, javascript, php', data-link='http://loftschool.com/')
+                                    .prev__box
+                                        img.prev__slide(src='assets/images/works/2.png')
+                                li.prev__item(data-full='assets/images/works/3.png', data-title='Портал обучающих уроков "LoftBlog"', data-skills='Ruby on Rails, javascript, RESTful', data-link='http://loftblog.ru/')
+                                    .prev__box
+                                        img.prev__slide(src='assets/images/works/3.png')
+                                li.prev__item(data-full='assets/images/works/4.png', data-title='Сайт "Атма йога"', data-skills='UX, design, seo', data-link='http://atmayoga.ru/')
+                                    .prev__box
+                                        img.prev__slide(src='assets/images/works/4.png')
                             .control__prev
                                 svg(width="43" height="27").arrow-portfolio__box-prev
                                     use(xlink:href="assets/images/sprite.svg#portf_arrow_down").arrow-portfolio__icon-prev
@@ -195,6 +202,8 @@ html
                             .footer__copyright
                                 .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
         script(src="assets/scripts/components/jquery-3.2.1.min.js")
+        script(src="assets/scripts/components/anmtxt.js")
         script(src='assets/scripts/components/blur.js')
         script(src='assets/scripts/components/parallax-scroll.js')
+        script(src='assets/scripts/components/slider.js')
         script(src='assets/scripts/components/common.js')

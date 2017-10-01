@@ -77,31 +77,35 @@
 						</div>
 					</h1>
 				</div>
-				<div class="works-section-2__content">
+				<div class="works-section-2__content slider">
 					<div class="works-section-2__left">
-						<h1 class="title title--twoLine">Сайт школы онлайн образования</h1>
+						<div class="title-box">
+							<h1 class="title title--twoLine subtitle">Сайт школы онлайн образования</h1>
+						</div>
 						<div class="section-2__tech">
 							<div class="tech">Html, Css, Javascript</div>
 						</div>
 						<div class="section-2__button">
-							<div class="button"><a class="button__link" href="#">
-									<svg class="link__box-svg" width="20" height="19">
-										<use class="link__icon" xlink:href="assets/images/sprite.svg#link"></use>
-									</svg>		Посмотреть сайт</a></div>
+							<div class="button"><a class="button__link" href="#" target="_blank"><i class="fa works__content-view-icon fa-link link__icon"></i>Посмотреть сайт</a></div>
 						</div>
 					</div>
 					<div class="works-section-2__site">
-						<div class="view-site">
-							<ul class="view-site__list">
-								<li class="view-site__item"><img class="view-site__img" src="assets/images/works/1.png" alt="work-1"></li>
-							</ul>
-						</div>
+						<div class="view-site"><img class="view-site__img" src="assets/images/works/1.png" alt="work-1"></div>
 					</div>
 					<div class="works-section-2__control">
 						<div class="prev">
 							<ul class="prev__list">
-								<li class="prev__item">
-									<div class="prev__box"><img class="prev__slide" src="assets/images/works/2.png" alt="work-2"></div>
+								<li class="prev__item" data-full="assets/images/works/1.png" data-title="Агентсво интернет решений &quot;ITLoft&quot;" data-skills="node" data-link="http://itloft.ru/">
+									<div class="prev__box"><img class="prev__slide" src="assets/images/works/1.png"></div>
+								</li>
+								<li class="prev__item" data-full="assets/images/works/2.png" data-title="Школа онлай-образования &quot;LoftSchool&quot;" data-skills="html5, CSS3, javascript, php" data-link="http://loftschool.com/">
+									<div class="prev__box"><img class="prev__slide" src="assets/images/works/2.png"></div>
+								</li>
+								<li class="prev__item" data-full="assets/images/works/3.png" data-title="Портал обучающих уроков &quot;LoftBlog&quot;" data-skills="Ruby on Rails, javascript, RESTful" data-link="http://loftblog.ru/">
+									<div class="prev__box"><img class="prev__slide" src="assets/images/works/3.png"></div>
+								</li>
+								<li class="prev__item" data-full="assets/images/works/4.png" data-title="Сайт &quot;Атма йога&quot;" data-skills="UX, design, seo" data-link="http://atmayoga.ru/">
+									<div class="prev__box"><img class="prev__slide" src="assets/images/works/4.png"></div>
 								</li>
 							</ul>
 							<div class="control__prev">
@@ -249,8 +253,10 @@
 			</section>
 		</div>
 		<script src="assets/scripts/components/jquery-3.2.1.min.js"></script>
+		<script src="assets/scripts/components/anmtxt.js"></script>
 		<script src="assets/scripts/components/blur.js"></script>
 		<script src="assets/scripts/components/parallax-scroll.js"></script>
+		<script src="assets/scripts/components/slider.js"></script>
 		<script src="assets/scripts/components/common.js"></script>
 	</body>
 </html>

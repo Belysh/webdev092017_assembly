@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 67%;
     width: 50%;
     @include size-768 {
         width: 100%;
@@ -142,7 +142,7 @@
 .works-section-2__control {
     display: flex;
     justify-content: center;
-    height: 30%;
+    height: 247px;
     width: 50%;
     @include size-768 {
         width: 100%;
@@ -150,8 +150,8 @@
 }
 
 .prev__list, .next__list {
-    margin: 0 auto;
-    display: flex;
+    overflow: hidden;
+    max-height: 250px;
 }
 
 .prev__item, .next__item {
@@ -159,7 +159,11 @@
     border-left: 1px solid #cacaca;
     border-right: 1px solid #cacaca;
     display: flex;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+
 
 }
 
@@ -176,11 +180,16 @@
 
 .prev, .next {
     position: relative;
+    overflow: hidden;
     display: flex;
+    width: 50%;
 }
 
 .prev__box, .next__box {
     width: 70%;
+    @include size-645 {
+        width: 100%;
+    }
 display: flex;
 margin: 0 auto;
 align-items: center;
@@ -192,6 +201,7 @@ align-items: center;
 }
 
 .control__prev, .control__next {
+    z-index: 100;
     padding: 10px;
     position: absolute;
     top: 50%;
@@ -256,7 +266,7 @@ align-items: center;
     fill: #fff;
 }
 
-.link__box-svg {
+.link__icon {
     margin-right: 10px;
 }
 
@@ -285,9 +295,9 @@ align-items: center;
 
 
 .title--twoLine:after, .title--twoLine:before {
-    top: 25%;
+    top: 0.5em;
     @include size-768 {
-        top: 50%;
+
     }  
 }
 
@@ -340,7 +350,7 @@ align-items: center;
 }
 .works-section-3__title .title--twoLine:before, .title--twoLine:after {
     @include size-768 {
-        top: 50%;
+        top: 0.5em;
     }  
 }
 
@@ -623,7 +633,27 @@ bottom: 0;
     transform: rotate(-180deg);
 }
 
-// section-4___________________________________________
-.works__section-4 {
 
+
+// slider_____________________________
+
+.slide-active {
+    top: 0;
+    z-index: 10;
+}
+
+.letter-word {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.letter-span {
+    opacity: 0;
+    display: inline-block;
+}
+
+.letter-span.active {
+    opacity: 1;
+    animation: bounceIn 1s;
+    -webkit-animation: bounceIn 1s;
 }
