@@ -10,100 +10,111 @@ html
         link(rel='stylesheet' href='assets/styles/main.min.css')
 
 body
-  .welcome
-    #parallax.parallax
-        .parallax__layer
-            img(src="assets/images/parallax/layer_2.png", alt="bg_parallax").parallax__img
-        .parallax__layer
-            img(src="assets/images/parallax/layer_3.png", alt="bg_parallax").parallax__img
-        .parallax__layer
-            img(src="assets/images/parallax/layer_5.png", alt="bg_parallax").parallax__img
-        .parallax__layer
-            img(src="assets/images/parallax/layer_6.png", alt="bg_parallax").parallax__img
-        .parallax__layer
-            img(src="assets/images/parallax/layer_8.png", alt="bg_parallax").parallax__img
-        .parallax__layer
-            img(src="assets/images/parallax/layer_9.png", alt="bg_parallax").parallax__img 
-        .parallax__layer
-            img(src="assets/images/parallax/layer_4.png", alt="bg_parallax").parallax__img.parallax__img--sky-1
-        .parallax__layer
-            img(src="assets/images/parallax/layer_7.png", alt="bg_parallax").parallax__img.parallax__img--sky-2
-        .parallax__layer
-            img(src="assets/images/parallax/layer_10.png", alt="bg_parallax").parallax__img.parallax__img--sky-3
-    section.section.section__welcome
-      .welcome__top
-        .login
-          a.login__link(href="#") Авторизоваться
-      .welcome__center
-        .box-effect.effect__click
-          .box-effect__front
-            .main
-              .main__box
-                .avatar
-                  .avatar__box
-                    img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
-                  .avatar__title
-                    h1.avatar__i Владимир Астахов
-                    .avatar__info Личный сайт веб разработчика
-                .main__socials
-                  ul.icons
-                      li.icons__item
-                          a(href="https://vk.com/id27837868" class='icons__link' target="_blank")
-                              svg(width="31" height="17").vk
-                                  use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
-                      li.icons__item
-                          a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
-                              svg(width="26" height="22").github
-                                  use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
-                      li.icons__item
-                          a(href="https://www.linkedin.com" class='icons__link' target="_blank")
-                              svg(width="24" height="22").in
-                                  use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
-              nav.nav
-                ul.nav__list
-                  li.nav__item
-                    a(href="works.html").nav__link Мои работы
-                  li.nav__item
-                    a(href="about.html").nav__link Обо мне
-                  li.nav__item
-                    a(href="blog.html").nav__link Блог
-          .box-effect__back
-            .enter
-              .enter__title
-                  h1.enter__text.title Авторизуйтесь
-              form.form(action="#")
-                  .login-name
-                      label(for="name").login-name__icon.fa.fa-user
-                      input(type="text" name="name" id="name").login-name__field
-                  .password
-                      label(for="password").password__icon.fa.fa-key
-                      input(type="password" id="password" name="password").password__field
-                  .checkbox
-                      input(type="checkbox" id="check" name="check" value='yes').checkbox__item
-                      label(for="check").checkbox__label
-                          i.fa.fa-check.checkbox__icon(aria-hidden='true')
-                      span.checkbox__text Я человек
-                  .radio
-                      .radio__title Вы точно не робот?
-                      .radio__var
-                          .radio__sure
-                              input(name="sure" type="radio" value="yes" id="sure").radio__item
-                              label(for="sure").radio__label
-                              span.radio__text Да
-                          .radio__no
-                              input(name="sure" type="radio" value="no" id="no").radio__item
-                              label(for="no").radio__label
-                              span.radio__text Не уверен
-              nav.nav
-                  ul.nav__list
-                      li.nav__item
-                          a(href="#").nav__link.nav__link--flip На главную
-                      li.nav__item
-                          a(href="").nav__link Войти
-      .welcome__bottom
-        .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
-  script(src='assets/scripts/components/flip.js')
-  script(src='assets/scripts/components/parallax.js')
+    .preloader
+        .preloader__info
+            .preloader__img
+                svg(width="144" height="144" viewbox='0 0 144 144', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    circle(class='circle circle_1' transform= "rotate(-110 72 72)", opacity='0.4', fill='none',  stroke-width='4', stroke-miterlimit='10', cx='72', cy='71.999', r='70')
+                    circle(class='circle circle_2' transform= "rotate(-125 72 72)" opacity='0.7', fill='none',  stroke-width='3.8938', stroke-miterlimit='10', cx='72', cy='72', r='55')
+                    circle(class='circle circle_3' transform= "rotate(-135 72 72)" fill='none', stroke-width='4', stroke-miterlimit='10', cx='72', cy='72', r='40')
+
+            span.preloader__text 100%  
+    .welcome
+        #parallax.parallax
+            .parallax__layer
+                img(src="assets/images/parallax/layer_2.png", alt="bg_parallax").parallax__img
+            .parallax__layer
+                img(src="assets/images/parallax/layer_3.png", alt="bg_parallax").parallax__img
+            .parallax__layer
+                img(src="assets/images/parallax/layer_5.png", alt="bg_parallax").parallax__img
+            .parallax__layer
+                img(src="assets/images/parallax/layer_6.png", alt="bg_parallax").parallax__img
+            .parallax__layer
+                img(src="assets/images/parallax/layer_8.png", alt="bg_parallax").parallax__img
+            .parallax__layer
+                img(src="assets/images/parallax/layer_9.png", alt="bg_parallax").parallax__img 
+            .parallax__layer
+                img(src="assets/images/parallax/layer_4.png", alt="bg_parallax").parallax__img.parallax__img--sky-1
+            .parallax__layer
+                img(src="assets/images/parallax/layer_7.png", alt="bg_parallax").parallax__img.parallax__img--sky-2
+            .parallax__layer
+                img(src="assets/images/parallax/layer_10.png", alt="bg_parallax").parallax__img.parallax__img--sky-3
+        section.section.section__welcome
+            .welcome__top
+                .login
+                a.login__link(href="#") Авторизоваться
+            .welcome__center
+                .box-effect.effect__click
+                    .box-effect__front
+                        .main
+                            .main__box
+                                .avatar
+                                    .avatar__box
+                                        img(src="assets/images/ava.png" class="avatar__img" alt="avatar")
+                                    .avatar__title
+                                        h1.avatar__i Владимир Астахов
+                                        .avatar__info Личный сайт веб разработчика
+                                    .main__socials
+                                        ul.icons
+                                            li.icons__item
+                                                a(href="https://vk.com/id27837868" class='icons__link' target="_blank")
+                                                    svg(width="31" height="17").vk
+                                                        use(xlink:href="assets/images/sprite.svg#vk").vk__icon.icon
+                                            li.icons__item
+                                                a(href="https://github.com/Red02Raccoon" class='icons__link' target="_blank")
+                                                    svg(width="26" height="22").github
+                                                        use(xlink:href="assets/images/sprite.svg#github").github__icon.icon
+                                            li.icons__item
+                                                a(href="https://www.linkedin.com" class='icons__link' target="_blank")
+                                                    svg(width="24" height="22").in
+                                                        use(xlink:href="assets/images/sprite.svg#in").in__icon.icon
+                            nav.nav
+                                ul.nav__list
+                                    li.nav__item
+                                        a(href="works.html").nav__link Мои работы
+                                    li.nav__item
+                                        a(href="about.html").nav__link Обо мне
+                                    li.nav__item
+                                        a(href="blog.html").nav__link Блог
+                    .box-effect__back
+                        .enter
+                            .enter__title
+                                h1.enter__text.title Авторизуйтесь
+                            form.form(action="#")
+                                .login-name
+                                    label(for="name").login-name__icon.fa.fa-user
+                                    input(type="text" name="name" id="name").login-name__field
+                                .password
+                                    label(for="password").password__icon.fa.fa-key
+                                    input(type="password" id="password" name="password").password__field
+                                .checkbox
+                                    input(type="checkbox" id="check" name="check" value='yes').checkbox__item
+                                    label(for="check").checkbox__label
+                                        i.fa.fa-check.checkbox__icon(aria-hidden='true')
+                                    span.checkbox__text Я человек
+                                .radio
+                                    .radio__title Вы точно не робот?
+                                    .radio__var
+                                        .radio__sure
+                                            input(name="sure" type="radio" value="yes" id="sure").radio__item
+                                            label(for="sure").radio__label
+                                            span.radio__text Да
+                                        .radio__no
+                                            input(name="sure" type="radio" value="no" id="no").radio__item
+                                            label(for="no").radio__label
+                                            span.radio__text Не уверен
+                            nav.nav
+                                ul.nav__list
+                                    li.nav__item
+                                        a(href="#").nav__link.nav__link--flip На главную
+                                    li.nav__item
+                                        a(href="").nav__link Войти
+            .welcome__bottom
+                .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
+    script(src='assets/scripts/components/flip.js')
+    script(src='assets/scripts/components/parallax.js')
+    script(src='assets/scripts/components/preloader.js')
+
 
 
 

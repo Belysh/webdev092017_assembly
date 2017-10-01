@@ -11,6 +11,17 @@
 	</head>
 </html>
 <body>
+	<div class="preloader">
+		<div class="preloader__info">
+			<div class="preloader__img">
+				<svg width="144" height="144" viewbox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<circle class="circle circle_1" transform="rotate(-110 72 72)" opacity="0.4" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="71.999" r="70"></circle>
+					<circle class="circle circle_2" transform="rotate(-125 72 72)" opacity="0.7" fill="none" stroke-width="3.8938" stroke-miterlimit="10" cx="72" cy="72" r="55"></circle>
+					<circle class="circle circle_3" transform="rotate(-135 72 72)" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40"></circle>
+				</svg>
+			</div><span class="preloader__text">100%  </span>
+		</div>
+	</div>
 	<div class="welcome">
 		<div class="parallax" id="parallax">
 			<div class="parallax__layer"><img class="parallax__img" src="assets/images/parallax/layer_2.png" alt="bg_parallax"></div>
@@ -25,7 +36,7 @@
 		</div>
 		<section class="section section__welcome">
 			<div class="welcome__top">
-				<div class="login"><a class="login__link" href="#">Авторизоваться</a></div>
+				<div class="login"></div><a class="login__link" href="#">Авторизоваться</a>
 			</div>
 			<div class="welcome__center">
 				<div class="box-effect effect__click">
@@ -38,22 +49,22 @@
 										<h1 class="avatar__i">Владимир Астахов</h1>
 										<div class="avatar__info">Личный сайт веб разработчика</div>
 									</div>
-								</div>
-								<div class="main__socials">
-									<ul class="icons">
-										<li class="icons__item"><a class="icons__link" href="https://vk.com/id27837868" target="_blank">
-												<svg class="vk" width="31" height="17">
-													<use class="vk__icon icon" xlink:href="assets/images/sprite.svg#vk"></use>
-												</svg></a></li>
-										<li class="icons__item"><a class="icons__link" href="https://github.com/Red02Raccoon" target="_blank">
-												<svg class="github" width="26" height="22">
-													<use class="github__icon icon" xlink:href="assets/images/sprite.svg#github"></use>
-												</svg></a></li>
-										<li class="icons__item"><a class="icons__link" href="https://www.linkedin.com" target="_blank">
-												<svg class="in" width="24" height="22">
-													<use class="in__icon icon" xlink:href="assets/images/sprite.svg#in"></use>
-												</svg></a></li>
-									</ul>
+									<div class="main__socials">
+										<ul class="icons">
+											<li class="icons__item"><a class="icons__link" href="https://vk.com/id27837868" target="_blank">
+													<svg class="vk" width="31" height="17">
+														<use class="vk__icon icon" xlink:href="assets/images/sprite.svg#vk"></use>
+													</svg></a></li>
+											<li class="icons__item"><a class="icons__link" href="https://github.com/Red02Raccoon" target="_blank">
+													<svg class="github" width="26" height="22">
+														<use class="github__icon icon" xlink:href="assets/images/sprite.svg#github"></use>
+													</svg></a></li>
+											<li class="icons__item"><a class="icons__link" href="https://www.linkedin.com" target="_blank">
+													<svg class="in" width="24" height="22">
+														<use class="in__icon icon" xlink:href="assets/images/sprite.svg#in"></use>
+													</svg></a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 							<nav class="nav">
@@ -114,4 +125,5 @@
 	</div>
 	<script src="assets/scripts/components/flip.js"></script>
 	<script src="assets/scripts/components/parallax.js"></script>
+	<script src="assets/scripts/components/preloader.js"></script>
 </body>

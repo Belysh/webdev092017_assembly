@@ -1,3 +1,117 @@
+// for preloader_________
+.preloader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 100;
+    background-image: url("../images/preloader/preloader.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.preloader.done {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader__img {
+    border: 2px solid red;
+    
+}
+
+.preloader__info {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.preloader__text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);  
+}
+
+.circle {
+    stroke: none;
+}
+
+.circle_1 {
+
+    stroke-dasharray: 440;
+    animation-name: show1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.circle_2 {
+    stroke-dasharray: 345;
+    animation-name: show2;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.circle_3 {
+    stroke-dasharray: 251;
+    animation-name: show3;
+    animation-duration: 2.3s;
+    animation-timing-function: linear;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show1 {
+    from {
+        stroke: #fff;
+      stroke-dashoffset: 440;
+    }
+    
+    to {
+        stroke: #fff;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes show2 {
+    from {
+        stroke: #fff;
+      stroke-dashoffset: 345;
+    }
+    
+    to {
+        stroke: #fff;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes show3 {
+    from {
+        stroke: #fff;
+      stroke-dashoffset: 251;
+    }
+    
+    to {
+        stroke: #fff;
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+
+
 // for parallax_________
 
 .parallax {
