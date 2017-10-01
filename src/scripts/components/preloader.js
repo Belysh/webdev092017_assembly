@@ -11,7 +11,6 @@ for (var i=0; i < imagesTotal; i++) {
     imagesClone.onload = imageLoaded;
     imagesClone.onerror = imageLoaded;
 }
-
 function imageLoaded() {
     imagesLoadedCount++;
 
@@ -21,6 +20,6 @@ function imageLoaded() {
             if(!preloader.classList.contains("done")) {
                 preloader.classList.add("done");
             }
-        }, 1000);
+        }, 500);
     }
 }
