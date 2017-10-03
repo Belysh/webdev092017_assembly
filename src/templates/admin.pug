@@ -18,14 +18,15 @@ html
                     a(href="index.html").header__link-toMainPage Вернуться на сайт
             .admin__tabs
                 ul.tab
-                    li.tab__item.active
-                        a(href="").tab__link Таб 1
                     li.tab__item
-                        a(href="").tab__link Таб 2
+                        a(href="admin_1.html").tab__link Таб 1
                     li.tab__item
-                        a(href="").tab__link Таб 3
+                        a(href="admin_2.html").tab__link Таб 2
                     li.tab__item
-                        a(href="").tab__link Таб 4
+                        a(href="admin_3.html").tab__link Таб 3
             .admin__main
                 block admin__content
+                .pop-up
+                    .pop-up__title Сообщение отправлено
+                    button(type='submit').btn-admin.btn-admin--close Закрыть
                 

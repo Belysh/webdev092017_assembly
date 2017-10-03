@@ -74,15 +74,17 @@
 }
 
 //_____style for admin-tab-1____
-.content-tab1 {
+
+.content-tab {
     padding: 50px 30px 40px;
+    position: relative;
 }
 
 .skill {
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 400px;
+    height: 560px;
 }
 
 .skill__item {
@@ -90,27 +92,44 @@
     margin-right: 95px;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
 
-.skill__name {
+tr {
+    margin-bottom: 10px;
+}
+
+
+.name {
     margin-bottom: 20px;
     display: inline-block;
 }
 
 .skill__subtitle {
     font-family: RobotoRegular;
+    margin-right: 30px;
+}
+
+.admin-input {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 35px;
+    padding: 3px 10px;
+    background-color: rgb(255, 255, 255);
+    border: none; 
+    box-sizing: border-box;
+    color: #455a64;
 }
 
 .skill__input {
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 11px;
-    border: none; 
-    box-sizing: border-box;
-    color: #455a64;  
+    width: 50px;
+    padding: 3px;
+
 }
 
-.skill__amount, .skill__amount-char, .skill__input {
+.skill__amount, .skill__amount-char, .admin-input, .skill__input {
     display: inline-block;
     vertical-align: middle;
 }
@@ -126,22 +145,56 @@
 
 .pop-up {
     position: absolute;
-    left: 99999;
     opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     width: 280px;
     height: 115px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Robotoregular;
 }
 
+
+
 .btn-admin--close {
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.80);
     padding: 14px 20px 12px 19px;
+}
+
+//_____style for admin-tab-2____
+
+.content-tab2__addArticle, .content-tab3__addproject {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-tab2__name, .content-tab3__name, .content-tab2__data, .content-tab3__tech {
+    max-width: 300px;
+    padding: 17px 25px;
+    height: auto;
+}
+
+
+.content-tab2__name, .name.content-tab3__name {
+    padding-left: 0;
+}
+
+
+.content-tab2__text {
+    max-width: 500px;
+    height: 165px;
+    vertical-align: top;
+    padding: 17px 25px;
+}
+
+.btn-admin--add {
+    margin-top: 30px;
 }

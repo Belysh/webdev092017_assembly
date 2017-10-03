@@ -4,12 +4,12 @@ block title
     title Панель администрирования - Таб_1
 
 block admin__content
-    .content-tab1
+    .content-tab
         h2.content-tab__title Страница "Oбо мне"
         form.content-tab1__skill
             ul.skill
                 li.skill__item
-                    .skill__name Frontend
+                    .skill__name.name Frontend
                     table.skill__table
                         - var items = ['Html', 'CSS', 'JavaScript'];
                             each item in items
@@ -18,11 +18,11 @@ block admin__content
                                         .skill__subtitle= item
                                     td
                                         .skill__amount
-                                            input(name="" type="text" placeholder="").skill__input
+                                            input(name="" type="text" placeholder="").skill__input.admin-input
                                         .skill__amount-char %
                 li.skill__item
                     .skill__name Backend
-                    table.skill__table
+                    table.skill__table(cellspacing="50")
                         - var items = ['PHP', 'Node.js', 'Mongo.db'];
                             each item in items
                                 tr
@@ -30,7 +30,7 @@ block admin__content
                                         .skill__subtitle= item
                                     td
                                         .skill__amount
-                                            input(name="" type="text" placeholder="").skill__input
+                                            input(name="" type="text" placeholder="").skill__input.admin-input
                                         .skill__amount-char %
                 li.skill__item
                     .skill__name Workflow
@@ -42,13 +42,11 @@ block admin__content
                                         .skill__subtitle= item
                                     td
                                         .skill__amount
-                                            input(name="" type="text" placeholder="").skill__input
+                                            input(name="" type="text" placeholder="").skill__input.admin-input
                                         .skill__amount-char %
             .skill__button
                 button(type='submit').btn-admin.btn-admin--save Сохранить
-        .pop-up
-            .pop-up__title Сообщение отправлено
-            button(type='submit').btn-admin.btn-admin--close Закрыть
+
             
 
             
