@@ -18,7 +18,7 @@ body
                     circle(class='circle circle_2' transform= "rotate(-125 72 72)" opacity='0.7', fill='none',  stroke-width='3.8938', stroke-miterlimit='10', cx='72', cy='72', r='55')
                     circle(class='circle circle_3' transform= "rotate(-135 72 72)" fill='none', stroke-width='4', stroke-miterlimit='10', cx='72', cy='72', r='40')
 
-            span.preloader__text 100%  
+            span.preloader__text  
     .welcome
         #parallax.parallax
             .parallax__layer
@@ -83,10 +83,10 @@ body
                             form.form(action="#")
                                 .login-name
                                     label(for="name").login-name__icon.fa.fa-user
-                                    input(type="text" name="name" id="name").login-name__field
+                                    input(type="text" name="name" id="name" required).login-name__field
                                 .password
                                     label(for="password").password__icon.fa.fa-key
-                                    input(type="password" id="password" name="password").password__field
+                                    input(type="password" id="password" name="password" required).password__field
                                 .checkbox
                                     input(type="checkbox" id="check" name="check" value='yes').checkbox__item
                                     label(for="check").checkbox__label
@@ -103,12 +103,12 @@ body
                                             input(name="sure" type="radio" value="no" id="no").radio__item
                                             label(for="no").radio__label
                                             span.radio__text Не уверен
-                            nav.nav
-                                ul.nav__list
-                                    li.nav__item
-                                        a(href="#").nav__link.nav__link--flip На главную
-                                    li.nav__item
-                                        a(href="").nav__link Войти
+                                nav.nav
+                                    ul.nav__list
+                                        li.nav__item
+                                            a(href="#").nav__link.nav__link--flip На главную
+                                        li.nav__item
+                                            button(type='submit').nav__link Войти
             .welcome__bottom
                 .bottom-text © Владимир Астахов | создано с любовью в LoftSchool | 2016
     script(src='assets/scripts/components/flip.js')

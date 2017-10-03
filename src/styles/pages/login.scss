@@ -79,7 +79,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: 0 20px 0;
     width: 100%;
 }
 
@@ -87,6 +86,7 @@
 .login-name, .password {
     overflow: hidden;
     font-size: 0;
+    padding: 0 20px;
 }
 
 .login-name__field, .password__field {

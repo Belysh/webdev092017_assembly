@@ -21,6 +21,7 @@
     position: absolute;
     display: inline-block;
     color: #fff;
+    
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
@@ -332,6 +333,12 @@ margin-top: 40px;
     color: #fff;
     display: block;
     line-height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-family: RobotoMedium;
+    background-color: transparent;
     @include size-645 {
         font-size: 14px;
     }

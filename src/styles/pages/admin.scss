@@ -1,0 +1,147 @@
+//_____main style for admin-template____
+.admin {
+    height: 100%;
+    width: 100%;
+    font-family: RobotoMedium;
+    font-size: 16px;
+    background-image: url("../images/bg_admin.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: #00bfa5;
+    color: #fff;
+    padding: 30px 31px 24px;
+}
+
+.header__title {
+    font-size: 28px;
+}
+
+.header__link-toMainPage {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+.admin__tabs {
+    background-color: #f0efe9;
+}
+
+.tab {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tab__item {
+    border-right: 3px solid #fff;
+    text-transform: uppercase;
+    color: #455a64;
+}
+
+.tab__item:hover a{
+    color: #00bfa5;
+}
+
+.tab__item.active a{
+    color: #00bfa5;
+    background-color: #fff;
+}
+
+.tab__link {
+    display: inline-block;
+    padding: 25px 68px 24px 70px;
+}
+
+.tab__link:hover {
+    background-color: #fff;
+}
+
+.admin__main {
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.content-tab__title {
+    font-size: 21px;
+    margin-bottom: 45px;
+}
+
+//_____style for admin-tab-1____
+.content-tab1 {
+    padding: 50px 30px 40px;
+}
+
+.skill {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.skill__item {
+    margin-bottom: 30px;
+    margin-right: 95px;
+}
+
+
+.skill__name {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.skill__subtitle {
+    font-family: RobotoRegular;
+}
+
+.skill__input {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 11px;
+    border: none; 
+    box-sizing: border-box;
+    color: #455a64;  
+}
+
+.skill__amount, .skill__amount-char, .skill__input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-admin {
+    border-radius: 5px;
+    background-color: rgb(0, 191, 165);
+    padding: 17px 20px 14px 19px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pop-up {
+    position: absolute;
+    left: 99999;
+    opacity: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Robotoregular;
+}
+
+.btn-admin--close {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.80);
+    padding: 14px 20px 12px 19px;
+}

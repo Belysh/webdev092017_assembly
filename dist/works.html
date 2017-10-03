@@ -175,19 +175,19 @@
 						<div class="blur-form__wrapper">
 							<div class="blur-form__img"></div>
 						</div>
-						<form class="connect__form" action="#">
+						<form class="connect__form" id="message">
 							<div class="conect__form__container">
 								<div class="title__box">
 									<h1 class="title conect__title">Связаться со мной</h1>
 								</div>
 								<div class="conect__input-box">
-									<input class="form__input conect__name" type="text" placeholder="Имя">
+									<input class="form__input conect__name" type="text" placeholder="Имя" required name="nameUser" title="Введите Ваше имя">
 								</div>
 								<div class="conect__input-box">
-									<input class="form__input conect__mail" type="email" placeholder="E-mail">
+									<input class="form__input conect__mail" type="email" placeholder="E-mail" required name="email" title="Введите Ваш email">
 								</div>
 								<div class="conect__input-box">
-									<textarea class="form__input conect__message" name="massage_from_user" placeholder="Ваше сообщение"></textarea>
+									<textarea class="form__input conect__message" name="message_from_user" placeholder="Ваше сообщение" required title="Введите Ваше сообщение"></textarea>
 								</div>
 								<div class="conect__button">
 									<ul class="connect__list">
@@ -257,6 +257,7 @@
 		<script src="assets/scripts/components/blur.js"></script>
 		<script src="assets/scripts/components/parallax-scroll.js"></script>
 		<script src="assets/scripts/components/slider.js"></script>
+		<script src="assets/scripts/components/sendMessage.js"></script>
 		<script src="assets/scripts/components/common.js"></script>
 	</body>
 </html>

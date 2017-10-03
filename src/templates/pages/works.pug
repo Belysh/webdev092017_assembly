@@ -144,16 +144,16 @@ html
                     .conect
                         .blur-form__wrapper
                             .blur-form__img
-                        form.connect__form(action="#")
+                        form.connect__form(id="message")
                             .conect__form__container
                                 .title__box
                                     h1.title.conect__title Связаться со мной
                                 .conect__input-box
-                                    input(type="text" placeholder="Имя").form__input.conect__name
+                                    input(type="text" placeholder="Имя" required name='nameUser' title="Введите Ваше имя").form__input.conect__name
                                 .conect__input-box
-                                    input(type="email" placeholder="E-mail").form__input.conect__mail
+                                    input(type="email" placeholder="E-mail" required name="email" title="Введите Ваш email").form__input.conect__mail
                                 .conect__input-box
-                                    textarea(name="massage_from_user" placeholder="Ваше сообщение" ).form__input.conect__message
+                                    textarea(name="message_from_user" placeholder="Ваше сообщение" required title="Введите Ваше сообщение").form__input.conect__message
                                 .conect__button
                                     ul.connect__list
                                         li.conect__item
@@ -206,4 +206,5 @@ html
         script(src='assets/scripts/components/blur.js')
         script(src='assets/scripts/components/parallax-scroll.js')
         script(src='assets/scripts/components/slider.js')
+        script(src='assets/scripts/components/sendMessage.js')
         script(src='assets/scripts/components/common.js')
